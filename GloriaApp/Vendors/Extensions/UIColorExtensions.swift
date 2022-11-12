@@ -24,4 +24,10 @@ extension UIColor {
     
     static let textColor = UIColor.init(named: "textColor")
     static let secondaryTextColor = UIColor.init(named: "secondaryTextColor")
+    
+    static let primaryButtonColor = UIColor.init(named: "primaryButtonColor")
+    static let secondaryButtonColor = UIColor.init(named: "secondaryButtonColor")
+    static let destructiveButtonColor = UIColor.init(named: "destructiveButtonColor")
+    static let primaryDisabledButton = UIColor.init(named: "primaryDisabledButton")
+    static let primaryDisabledText = UIColor.init(named: "primaryDisabledText")
 }

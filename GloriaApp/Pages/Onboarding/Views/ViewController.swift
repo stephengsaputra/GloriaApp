@@ -11,9 +11,9 @@ import SnapKit
 class ViewController: UIViewController {
     
     // MARK: - Properties
-    private lazy var label: GLabel = {
-        let label = GLabel(style: .subtitleText, textString: "Hello, world!")
-        return label
+    private lazy var button: GButton = {
+        let button = GButton(style: .primaryDisabled, buttonText: "test", selector: #selector(handleButton), target: self)
+        return button
     }()
     
     // MARK: - Lifecycle
@@ -21,18 +21,26 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         configureUI()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            UIView.animate(withDuration: 0.3) {
+                self.button.makeDisabled(isDisabled: false)
+            }
+        }
     }
     
     // MARK: - Selectors
-    
+    @objc func handleButton() {
+        print("DEBUG: Hello, world!")
+    }
     
     // MARK: - Helpers
     func configureUI() {
         
         view.backgroundColor = .contentBG
         
-        view.addSubview(label)
-        label.snp.makeConstraints { make in
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
     }
