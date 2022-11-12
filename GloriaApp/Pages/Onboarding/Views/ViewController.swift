@@ -6,14 +6,35 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - Properties
+    private lazy var label: GLabel = {
+        let label = GLabel(style: .subtitleText, textString: "Hello, world!")
+        return label
+    }()
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        view.backgroundColor = .backgroundColor
+        configureUI()
     }
-
-
+    
+    // MARK: - Selectors
+    
+    
+    // MARK: - Helpers
+    func configureUI() {
+        
+        view.backgroundColor = .contentBG
+        
+        view.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+    }
 }
 
