@@ -13,6 +13,8 @@
 		DB393C7A291F9985003ADAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB393C78291F9985003ADAB9 /* Main.storyboard */; };
 		DB393C7C291F9986003ADAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB393C7B291F9986003ADAB9 /* Assets.xcassets */; };
 		DB393C7F291F9986003ADAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB393C7D291F9986003ADAB9 /* LaunchScreen.storyboard */; };
+		DB5EDE3A291FA44200AE0386 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB5EDE39291FA44200AE0386 /* SnapKit */; };
+		DB5EDE3D291FA45000AE0386 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB5EDE3C291FA45000AE0386 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5EDE3A291FA44200AE0386 /* SnapKit in Frameworks */,
+				DB5EDE3D291FA45000AE0386 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,10 @@
 			dependencies = (
 			);
 			name = GloriaApp;
+			packageProductDependencies = (
+				DB5EDE39291FA44200AE0386 /* SnapKit */,
+				DB5EDE3C291FA45000AE0386 /* IQKeyboardManagerSwift */,
+			);
 			productName = GloriaApp;
 			productReference = DB393C6F291F9985003ADAB9 /* GloriaApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,10 @@
 				Base,
 			);
 			mainGroup = DB393C66291F9985003ADAB9;
+			packageReferences = (
+				DB5EDE38291FA44200AE0386 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = DB393C70291F9985003ADAB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,11 +310,13 @@
 				DEVELOPMENT_TEAM = L7SMRXB5WV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GloriaApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Gloria;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,9 +324,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Esgeee.GloriaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,11 +343,13 @@
 				DEVELOPMENT_TEAM = L7SMRXB5WV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GloriaApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Gloria;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Esgeee.GloriaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -366,6 +388,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB5EDE38291FA44200AE0386 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB5EDE39291FA44200AE0386 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5EDE38291FA44200AE0386 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DB5EDE3C291FA45000AE0386 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB393C67291F9985003ADAB9 /* Project object */;
 }
