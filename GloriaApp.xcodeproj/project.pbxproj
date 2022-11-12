@@ -15,6 +15,14 @@
 		DB393C7F291F9986003ADAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB393C7D291F9986003ADAB9 /* LaunchScreen.storyboard */; };
 		DB5EDE3A291FA44200AE0386 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB5EDE39291FA44200AE0386 /* SnapKit */; };
 		DB5EDE3D291FA45000AE0386 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB5EDE3C291FA45000AE0386 /* IQKeyboardManagerSwift */; };
+		DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE47291FA4D100AE0386 /* UIColorExtensions.swift */; };
+		DB5EDE4D291FA4EE00AE0386 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB5EDE49291FA4EE00AE0386 /* Poppins-Bold.ttf */; };
+		DB5EDE4E291FA4EE00AE0386 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB5EDE4A291FA4EE00AE0386 /* Poppins-SemiBold.ttf */; };
+		DB5EDE4F291FA4EE00AE0386 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB5EDE4B291FA4EE00AE0386 /* Poppins-Medium.ttf */; };
+		DB5EDE50291FA4EE00AE0386 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB5EDE4C291FA4EE00AE0386 /* Poppins-Regular.ttf */; };
+		DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */; };
+		DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE53291FA54C00AE0386 /* GButton.swift */; };
+		DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE55291FA55900AE0386 /* GLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		DB393C7B291F9986003ADAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB393C7E291F9986003ADAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB393C80291F9986003ADAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5EDE47291FA4D100AE0386 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		DB5EDE49291FA4EE00AE0386 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		DB5EDE4A291FA4EE00AE0386 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		DB5EDE4B291FA4EE00AE0386 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		DB5EDE4C291FA4EE00AE0386 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		DB5EDE53291FA54C00AE0386 /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
+		DB5EDE55291FA55900AE0386 /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +78,9 @@
 			children = (
 				DB393C72291F9985003ADAB9 /* AppDelegate.swift */,
 				DB393C74291F9985003ADAB9 /* SceneDelegate.swift */,
-				DB393C76291F9985003ADAB9 /* ViewController.swift */,
+				DB5EDE42291FA49E00AE0386 /* Models */,
+				DB5EDE3E291FA47400AE0386 /* Pages */,
+				DB5EDE43291FA4A900AE0386 /* Vendors */,
 				DB5EDE37291FA37C00AE0386 /* Storyboards */,
 				DB393C7B291F9986003ADAB9 /* Assets.xcassets */,
 				DB393C80291F9986003ADAB9 /* Info.plist */,
@@ -77,6 +95,84 @@
 				DB393C7D291F9986003ADAB9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DB5EDE3E291FA47400AE0386 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				DB5EDE3F291FA47E00AE0386 /* Onboarding */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		DB5EDE3F291FA47E00AE0386 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DB5EDE41291FA49500AE0386 /* View Model */,
+				DB5EDE40291FA48500AE0386 /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DB5EDE40291FA48500AE0386 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB393C76291F9985003ADAB9 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB5EDE41291FA49500AE0386 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DB5EDE42291FA49E00AE0386 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB5EDE43291FA4A900AE0386 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				DB5EDE44291FA4B100AE0386 /* Extensions */,
+				DB5EDE46291FA4C000AE0386 /* Fonts */,
+				DB5EDE45291FA4B900AE0386 /* UI Components */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		DB5EDE44291FA4B100AE0386 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB5EDE47291FA4D100AE0386 /* UIColorExtensions.swift */,
+				DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB5EDE45291FA4B900AE0386 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				DB5EDE53291FA54C00AE0386 /* GButton.swift */,
+				DB5EDE55291FA55900AE0386 /* GLabel.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		DB5EDE46291FA4C000AE0386 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB5EDE49291FA4EE00AE0386 /* Poppins-Bold.ttf */,
+				DB5EDE4B291FA4EE00AE0386 /* Poppins-Medium.ttf */,
+				DB5EDE4C291FA4EE00AE0386 /* Poppins-Regular.ttf */,
+				DB5EDE4A291FA4EE00AE0386 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +241,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5EDE4E291FA4EE00AE0386 /* Poppins-SemiBold.ttf in Resources */,
 				DB393C7F291F9986003ADAB9 /* LaunchScreen.storyboard in Resources */,
+				DB5EDE50291FA4EE00AE0386 /* Poppins-Regular.ttf in Resources */,
 				DB393C7C291F9986003ADAB9 /* Assets.xcassets in Resources */,
+				DB5EDE4F291FA4EE00AE0386 /* Poppins-Medium.ttf in Resources */,
 				DB393C7A291F9985003ADAB9 /* Main.storyboard in Resources */,
+				DB5EDE4D291FA4EE00AE0386 /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +260,11 @@
 			files = (
 				DB393C77291F9985003ADAB9 /* ViewController.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
+				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
+				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
+				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
+				DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
