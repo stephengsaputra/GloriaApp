@@ -59,12 +59,20 @@
 				DB393C72291F9985003ADAB9 /* AppDelegate.swift */,
 				DB393C74291F9985003ADAB9 /* SceneDelegate.swift */,
 				DB393C76291F9985003ADAB9 /* ViewController.swift */,
-				DB393C78291F9985003ADAB9 /* Main.storyboard */,
+				DB5EDE37291FA37C00AE0386 /* Storyboards */,
 				DB393C7B291F9986003ADAB9 /* Assets.xcassets */,
-				DB393C7D291F9986003ADAB9 /* LaunchScreen.storyboard */,
 				DB393C80291F9986003ADAB9 /* Info.plist */,
 			);
 			path = GloriaApp;
+			sourceTree = "<group>";
+		};
+		DB5EDE37291FA37C00AE0386 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DB393C78291F9985003ADAB9 /* Main.storyboard */,
+				DB393C7D291F9986003ADAB9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
