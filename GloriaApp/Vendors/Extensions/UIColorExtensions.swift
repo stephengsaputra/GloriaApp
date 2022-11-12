@@ -21,4 +21,7 @@ extension UIColor {
     
     static let tfBG = UIColor.init(named: "tfBG")
     static let tfBorder = UIColor.init(named: "tfBorder")
+    
+    static let textColor = UIColor.init(named: "textColor")
+    static let secondaryTextColor = UIColor.init(named: "secondaryTextColor")
 }
