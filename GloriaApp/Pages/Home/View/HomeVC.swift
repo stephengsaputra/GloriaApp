@@ -1,0 +1,30 @@
+//
+//  HomeVC.swift
+//  GloriaApp
+//
+//  Created by Stephen Giovanni Saputra on 13/11/22.
+//
+
+import UIKit
+
+class HomeVC: UIViewController {
+
+    // MARK: - Properties
+    
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        configureUI()
+    }
+    
+    // MARK: - Selectors
+    
+    
+    // MARK: - Helpers
+    func configureUI() {
+        
+        view.backgroundColor = .backgroundColor
+    }
+}
