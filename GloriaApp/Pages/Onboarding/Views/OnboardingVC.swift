@@ -11,8 +11,27 @@ import SnapKit
 class OnboardingVC: UIViewController {
     
     // MARK: - Properties
+    private lazy var gkaIcon: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "gka_icon")
+        image.backgroundColor = .primaryColor
+        image.layer.cornerRadius = 40
+        return image
+    }()
+    
+    private lazy var headingLabel: GLabel = {
+        let label = GLabel(style: .largeTitle, textString: "Selamat datang!")
+        return label
+    }()
+    
+    private lazy var subheadingLabel: GLabel = {
+        let label = GLabel(style: .bodyText, textString: "Akses informasi terbaru tentang gereja dan tumbuh semakin dekat kepada Tuhan")
+        label.textAlignment = .center
+        return label
+    }()
+    
     private lazy var button: GButton = {
-        let button = GButton(style: .primaryDisabled, buttonText: "test", selector: #selector(handleButton), target: self)
+        let button = GButton(style: .primary, buttonText: "Mulai", selector: #selector(handleButton), target: self)
         return button
     }()
     
@@ -21,12 +40,6 @@ class OnboardingVC: UIViewController {
         
         super.viewDidLoad()
         configureUI()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            UIView.animate(withDuration: 0.3) {
-                self.button.makeDisabled(isDisabled: false)
-            }
-        }
     }
     
     // MARK: - Selectors
@@ -37,11 +50,30 @@ class OnboardingVC: UIViewController {
     // MARK: - Helpers
     func configureUI() {
         
-        view.backgroundColor = .contentBG
+        view.backgroundColor = .backgroundColor
+        
+        view.addSubview(gkaIcon)
+        gkaIcon.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(view.frame.height / 4.176)
+        }
+        
+        let stack = UIStackView(arrangedSubviews: [headingLabel, subheadingLabel])
+        stack.alignment = .center
+        stack.axis = .vertical
+        stack.spacing = 6
+        
+        view.addSubview(stack)
+        stack.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(gkaIcon.snp.bottom).offset(view.frame.height / 11.671)
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
         
         view.addSubview(button)
         button.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
         }
     }
 }
