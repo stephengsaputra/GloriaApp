@@ -22,17 +22,18 @@ class EmptyTicketView: UIView {
         return label
     }()
     
-    private lazy var emptyCTA: GLabel = {
-        let label = GLabel(style: .caption2, textString: "")
-        label.textAlignment = .center
-        label.textColor = .secondaryButtonColor
+    private lazy var emptyCTAButton: UIButton = {
+        let button = UIButton()
         
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Ketuk untuk mendaftar ke sebuah acara")
         attributeString.addAttribute(.underlineStyle, value: 1, range: NSMakeRange(0, attributeString.length))
+        attributeString.addAttribute(.font, value: UIFont.caption2(), range: NSMakeRange(0, attributeString.length))
         
-        label.attributedText = attributeString
+        button.setAttributedTitle(attributeString, for: .normal)
+        button.setTitleColor(.secondaryButtonColor, for: .normal)
+        button.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
         
-        return label
+        return button
     }()
     
     //MARK: - Lifecycle
@@ -49,6 +50,9 @@ class EmptyTicketView: UIView {
     }
 
     // MARK: - Selectors
+    @objc func handleButton() {
+        print("DEBUG: Hello, world!")
+    }
     
     
     // MARK: - Helpers
@@ -57,7 +61,7 @@ class EmptyTicketView: UIView {
         self.backgroundColor = .secondaryColor
         self.addDressing(useShadow: true, useCornerRadius: true, useBorder: false)
         
-        let stack = UIStackView(arrangedSubviews: [emptyHeadingLabel, emptyBodyLabel, emptyCTA])
+        let stack = UIStackView(arrangedSubviews: [emptyHeadingLabel, emptyBodyLabel, emptyCTAButton])
         stack.spacing = 20
         stack.alignment = .center
         stack.axis = .vertical

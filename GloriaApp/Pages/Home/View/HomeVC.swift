@@ -29,7 +29,7 @@ class HomeVC: UIViewController {
         
         view.backgroundColor = .backgroundColor
         
-        let views = ReusableHomePageButton(imageBG: "cutToCut", buttonText: "Cut to Cut", selector: #selector(handleButton), target: self)
+        let views = EmptyTicketView()
         
         view.addSubview(views)
         views.snp.makeConstraints { make in
