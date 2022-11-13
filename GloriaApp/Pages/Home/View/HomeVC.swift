@@ -20,14 +20,16 @@ class HomeVC: UIViewController {
     }
     
     // MARK: - Selectors
-    
+    @objc func handleButton() {
+        print("DEBUG: Hello, world!")
+    }
     
     // MARK: - Helpers
     func configureUI() {
         
         view.backgroundColor = .backgroundColor
         
-        let views = EmptyTicketView()
+        let views = ReusableHomePageButton(imageBG: "cutToCut", buttonText: "Cut to Cut", selector: #selector(handleButton), target: self)
         
         view.addSubview(views)
         views.snp.makeConstraints { make in
