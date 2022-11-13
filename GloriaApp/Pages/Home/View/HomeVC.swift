@@ -26,5 +26,13 @@ class HomeVC: UIViewController {
     func configureUI() {
         
         view.backgroundColor = .backgroundColor
+        
+        let verseOfTheDay = VerseOfTheDayView()
+        
+        view.addSubview(verseOfTheDay)
+        verseOfTheDay.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(20)
+        }
     }
 }

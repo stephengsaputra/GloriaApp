@@ -101,8 +101,8 @@ class GLabel: UILabel {
                 self.font = UIFont.buttonText()
             case .bodyText:
                 self.font = UIFont.bodyText()
-                paragraphStyle.minimumLineHeight = CGFloat(22.5)
-                paragraphStyle.maximumLineHeight = CGFloat(22.5)
+                paragraphStyle.minimumLineHeight = CGFloat(24)
+                paragraphStyle.maximumLineHeight = CGFloat(24)
                 self.attributedText = NSAttributedString(
                     string: textString,
                     attributes: [
@@ -114,5 +114,6 @@ class GLabel: UILabel {
         
         self.textColor = .textColor
         self.numberOfLines = 100
+        self.lineBreakMode = .byWordWrapping
     }
 }

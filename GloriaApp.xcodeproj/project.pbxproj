@@ -25,6 +25,7 @@
 		DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE55291FA55900AE0386 /* GLabel.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
+		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		DB5EDE55291FA55900AE0386 /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +106,9 @@
 		DB5EDE3E291FA47400AE0386 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				DB95F3E1292133CA00D4F561 /* Home */,
 				DB5EDE3F291FA47E00AE0386 /* Onboarding */,
+				DB95F3E1292133CA00D4F561 /* Home */,
+				DB95F3E829213C8E00D4F561 /* UI Elements */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -205,6 +208,30 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		DB95F3E829213C8E00D4F561 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3E929213CAF00D4F561 /* Verse of the Day */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		DB95F3E929213CAF00D4F561 /* Verse of the Day */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3EA29213CB800D4F561 /* View */,
+			);
+			path = "Verse of the Day";
+			sourceTree = "<group>";
+		};
+		DB95F3EA29213CB800D4F561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +321,7 @@
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
 				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
+				DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
 				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,
 				DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */,

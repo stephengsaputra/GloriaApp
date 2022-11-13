@@ -41,15 +41,23 @@ extension UIView {
         subviews.forEach({ $0.removeFromSuperview() })
     }
     
-    func addShadow(opacity: Float = 1,
-                   radius: CGFloat = 32,
-                   offset: CGSize = CGSize(width: 0.0, height: 10.0),
-                   color: UIColor = .dropShadow ?? .black) {
+    func addDressing(useShadow: Bool, useCornerRadius: Bool, useBorder: Bool) {
         
-        layer.shadowOpacity = opacity
-        layer.shadowRadius = radius
-        layer.shadowOffset = offset
-        layer.shadowColor = color.cgColor
+        if useShadow {
+            layer.shadowOpacity = 1
+            layer.shadowRadius = 32
+            layer.shadowOffset = CGSize(width: 0.0, height: 10.0)
+            layer.shadowColor = UIColor.dropShadow?.cgColor ?? UIColor.black.cgColor
+        }
+        
+        if useCornerRadius {
+            layer.cornerRadius = 32
+        }
+        
+        if useBorder {
+            layer.borderColor = UIColor.contentBorder?.cgColor
+            layer.borderWidth = 1
+        }
     }
     
     func setDimensions(height: CGFloat, width: CGFloat) {
