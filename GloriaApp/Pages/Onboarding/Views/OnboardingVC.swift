@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OnboardingVC.swift
 //  GloriaApp
 //
 //  Created by Stephen Giovanni Saputra on 12/11/22.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class OnboardingVC: UIViewController {
     
     // MARK: - Properties
     private lazy var button: GButton = {

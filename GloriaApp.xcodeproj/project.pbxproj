@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C72291F9985003ADAB9 /* AppDelegate.swift */; };
 		DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C74291F9985003ADAB9 /* SceneDelegate.swift */; };
-		DB393C77291F9985003ADAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C76291F9985003ADAB9 /* ViewController.swift */; };
+		DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C76291F9985003ADAB9 /* OnboardingVC.swift */; };
 		DB393C7A291F9985003ADAB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB393C78291F9985003ADAB9 /* Main.storyboard */; };
 		DB393C7C291F9986003ADAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB393C7B291F9986003ADAB9 /* Assets.xcassets */; };
 		DB393C7F291F9986003ADAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB393C7D291F9986003ADAB9 /* LaunchScreen.storyboard */; };
@@ -29,7 +29,7 @@
 		DB393C6F291F9985003ADAB9 /* GloriaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloriaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB393C72291F9985003ADAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB393C74291F9985003ADAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB393C76291F9985003ADAB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB393C76291F9985003ADAB9 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		DB393C79291F9985003ADAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB393C7B291F9986003ADAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB393C7E291F9986003ADAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		DB5EDE40291FA48500AE0386 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DB393C76291F9985003ADAB9 /* ViewController.swift */,
+				DB393C76291F9985003ADAB9 /* OnboardingVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB393C77291F9985003ADAB9 /* ViewController.swift in Sources */,
+				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
