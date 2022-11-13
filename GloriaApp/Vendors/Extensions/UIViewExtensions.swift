@@ -23,24 +23,6 @@ extension UIView {
         layer.mask = mask
     }
     
-    func pinToParent(parent: UIView) {
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        parent.addSubview(self)
-        
-        NSLayoutConstraint.activate([
-            topAnchor.constraint(equalTo: parent.topAnchor),
-            leadingAnchor.constraint(equalTo: parent.leadingAnchor),
-            trailingAnchor.constraint(equalTo: parent.trailingAnchor),
-            bottomAnchor.constraint(equalTo: parent.bottomAnchor)
-        ])
-    }
-    
-    func removeAllSubviews() {
-        subviews.forEach({ $0.removeFromSuperview() })
-    }
-    
     func addDressing(useShadow: Bool, useCornerRadius: Bool, useBorder: Bool) {
         
         if useShadow {
@@ -58,12 +40,5 @@ extension UIView {
             layer.borderColor = UIColor.contentBorder?.cgColor
             layer.borderWidth = 1
         }
-    }
-    
-    func setDimensions(height: CGFloat, width: CGFloat) {
-        
-        translatesAutoresizingMaskIntoConstraints = false
-        heightAnchor.constraint(equalToConstant: height).isActive = true
-        widthAnchor.constraint(equalToConstant: width).isActive = true
     }
 }

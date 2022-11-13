@@ -27,10 +27,10 @@ class HomeVC: UIViewController {
         
         view.backgroundColor = .backgroundColor
         
-        let verseOfTheDay = VerseOfTheDayView()
+        let views = EmptyTicketView()
         
-        view.addSubview(verseOfTheDay)
-        verseOfTheDay.snp.makeConstraints { make in
+        view.addSubview(views)
+        views.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(20)
         }
