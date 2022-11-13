@@ -27,13 +27,13 @@ extension UIView {
         
         if useShadow {
             layer.shadowOpacity = 1
-            layer.shadowRadius = 32
+            layer.shadowRadius = 24
             layer.shadowOffset = CGSize(width: 0.0, height: 10.0)
             layer.shadowColor = UIColor.dropShadow?.cgColor ?? UIColor.black.cgColor
         }
         
         if useCornerRadius {
-            layer.cornerRadius = 32
+            layer.cornerRadius = 24
         }
         
         if useBorder {

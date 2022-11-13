@@ -38,9 +38,8 @@ class ReusableHomePageButton: UIButton {
         
         self.setBackgroundImage(UIImage(named: imageBG), for: .normal)
         
-        self.addDressing(useShadow: true, useCornerRadius: false, useBorder: false)
+        self.addDressing(useShadow: true, useCornerRadius: true, useBorder: false)
         self.clipsToBounds = true
-        self.layer.cornerRadius = 24
         
         self.setTitle(buttonText, for: .normal)
         self.setTitleColor(.white, for: .normal)
