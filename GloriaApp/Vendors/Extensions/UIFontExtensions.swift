@@ -83,7 +83,7 @@ extension UIFont {
     
     static func bodyText() -> UIFont {
         
-        guard let customFont = UIFont(name: "Poppins-Regular", size: 15) else {
+        guard let customFont = UIFont(name: "Poppins-Regular", size: 16) else {
             return UIFont.systemFont(ofSize: 15)
         }
         
