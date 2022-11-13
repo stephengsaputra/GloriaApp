@@ -63,15 +63,6 @@ extension UIFont {
         return customFont
     }
     
-    static func caption3() -> UIFont {
-        
-        guard let customFont = UIFont(name: "Poppins-Medium", size: 13) else {
-            return UIFont.systemFont(ofSize: 13)
-        }
-        
-        return customFont
-    }
-    
     static func buttonText() -> UIFont {
         
         guard let customFont = UIFont(name: "Poppins-Medium", size: 15) else {

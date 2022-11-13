@@ -16,7 +16,6 @@ class GLabel: UILabel {
         case heading3
         case caption1
         case caption2
-        case caption3
         case buttonText
         case bodyText
         case subtitleText
@@ -83,15 +82,6 @@ class GLabel: UILabel {
                 self.font = UIFont.caption2()
                 paragraphStyle.minimumLineHeight = CGFloat(21)
                 paragraphStyle.maximumLineHeight = CGFloat(21)
-                self.attributedText = NSAttributedString(
-                    string: textString,
-                    attributes: [
-                        .paragraphStyle: paragraphStyle
-                    ])
-            case .caption3:
-                self.font = UIFont.caption3()
-                paragraphStyle.minimumLineHeight = CGFloat(19.5)
-                paragraphStyle.maximumLineHeight = CGFloat(19.5)
                 self.attributedText = NSAttributedString(
                     string: textString,
                     attributes: [

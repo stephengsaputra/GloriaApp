@@ -41,6 +41,8 @@ class ReusableHomePageButton: UIButton {
         self.addDressing(useShadow: true, useCornerRadius: true, useBorder: false)
         self.clipsToBounds = true
         
+        self.adjustsImageWhenHighlighted = false
+        
         self.setTitle(buttonText, for: .normal)
         self.setTitleColor(.white, for: .normal)
         self.titleLabel?.font = UIFont.caption1()

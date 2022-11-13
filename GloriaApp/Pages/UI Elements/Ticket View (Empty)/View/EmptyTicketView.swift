@@ -10,20 +10,20 @@ import UIKit
 class EmptyTicketView: UIView {
 
     // MARK: - Properties
-    private lazy var headingLabel: GLabel = {
+    private lazy var emptyHeadingLabel: GLabel = {
         let label = GLabel(style: .heading2, textString: "Tidak ada acara selanjutnya")
         return label
     }()
     
-    private lazy var verseLabel: GLabel = {
+    private lazy var emptyBodyLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "Waduh! Kelihatannya kamu tidak mendaftar ke acara apapun")
         label.textAlignment = .center
         label.textColor = .secondaryTextColor
         return label
     }()
     
-    private lazy var verseNameLabel: GLabel = {
-        let label = GLabel(style: .caption3, textString: "")
+    private lazy var emptyCTA: GLabel = {
+        let label = GLabel(style: .caption2, textString: "")
         label.textAlignment = .center
         label.textColor = .secondaryButtonColor
         
@@ -57,7 +57,7 @@ class EmptyTicketView: UIView {
         self.backgroundColor = .secondaryColor
         self.addDressing(useShadow: true, useCornerRadius: true, useBorder: false)
         
-        let stack = UIStackView(arrangedSubviews: [headingLabel, verseLabel, verseNameLabel])
+        let stack = UIStackView(arrangedSubviews: [emptyHeadingLabel, emptyBodyLabel, emptyCTA])
         stack.spacing = 20
         stack.alignment = .center
         stack.axis = .vertical
@@ -65,7 +65,7 @@ class EmptyTicketView: UIView {
         addSubview(stack)
         stack.snp.makeConstraints { make in
             make.top.equalTo(self.snp.top).offset(30)
-            make.leading.trailing.equalToSuperview().inset(40)
+            make.leading.trailing.equalToSuperview().inset(30)
             make.bottom.equalTo(self.snp.bottom).offset(-30)
         }
     }
