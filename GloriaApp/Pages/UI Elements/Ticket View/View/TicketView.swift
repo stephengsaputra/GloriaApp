@@ -52,7 +52,9 @@ class TicketView: UIView {
     }
 
     // MARK: - Selectors
-    
+    @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
+        print("DEBUG: Hello, world!")
+    }
     
     // MARK: - Helpers
     private func configureUI() {
@@ -81,6 +83,9 @@ class TicketView: UIView {
             make.leading.trailing.equalToSuperview().inset(16)
             make.bottom.equalTo(self.snp.bottom).offset(-16)
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
+        self.addGestureRecognizer(tapGesture)
     }
     
     private func updateColors() {

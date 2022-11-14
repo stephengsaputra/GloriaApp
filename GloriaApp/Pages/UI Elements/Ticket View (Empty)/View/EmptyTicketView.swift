@@ -22,18 +22,17 @@ class EmptyTicketView: UIView {
         return label
     }()
     
-    internal lazy var emptyCTAButton: UIButton = {
-        let button = UIButton()
+    internal lazy var emptyCTAButton: UILabel = {
+        let label = UILabel()
         
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Ketuk untuk mendaftar ke sebuah acara")
         attributeString.addAttribute(.underlineStyle, value: 1, range: NSMakeRange(0, attributeString.length))
         attributeString.addAttribute(.font, value: UIFont.caption2(), range: NSMakeRange(0, attributeString.length))
+        attributeString.addAttribute(.foregroundColor, value: UIColor.secondaryButtonColor ?? UIColor.label, range: NSMakeRange(0, attributeString.length))
         
-        button.setAttributedTitle(attributeString, for: .normal)
-        button.setTitleColor(.secondaryButtonColor, for: .normal)
-        button.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
+        label.attributedText = attributeString
         
-        return button
+        return label
     }()
     
     //MARK: - Lifecycle
@@ -50,10 +49,9 @@ class EmptyTicketView: UIView {
     }
 
     // MARK: - Selectors
-    @objc func handleButton() {
+    @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
         print("DEBUG: Hello, world!")
     }
-    
     
     // MARK: - Helpers
     private func configureUI() {
@@ -72,6 +70,9 @@ class EmptyTicketView: UIView {
             make.leading.trailing.equalToSuperview().inset(30)
             make.bottom.equalTo(self.snp.bottom).offset(-30)
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
+        self.addGestureRecognizer(tapGesture)
     }
     
     private func updateColors() {
