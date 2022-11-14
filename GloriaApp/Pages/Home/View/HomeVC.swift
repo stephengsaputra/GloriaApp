@@ -29,7 +29,7 @@ class HomeVC: UIViewController {
         
         view.backgroundColor = .backgroundColor
         
-        let views = EmptyTicketView()
+        let views = TicketView()
         
         view.addSubview(views)
         views.snp.makeConstraints { make in

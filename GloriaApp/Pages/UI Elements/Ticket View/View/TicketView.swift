@@ -38,6 +38,12 @@ class TicketView: UIView {
         return label
     }()
     
+    internal lazy var qrIcon: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "qr_ticket_icon")
+        return image
+    }()
+    
     //MARK: - Lifecycle
     required init() {
         
@@ -72,10 +78,14 @@ class TicketView: UIView {
         eventDetailStack.axis = .vertical
         eventDetailStack.spacing = 0
         
-        let stack = UIStackView(arrangedSubviews: [eventLabelStack, eventDetailStack])
-        stack.spacing = 20
-        stack.alignment = .leading
-        stack.axis = .vertical
+        let textStack = UIStackView(arrangedSubviews: [eventLabelStack, eventDetailStack])
+        textStack.spacing = 20
+        textStack.alignment = .leading
+        textStack.axis = .vertical
+        
+        let stack = UIStackView(arrangedSubviews: [textStack, qrIcon])
+        stack.alignment = .center
+        stack.axis = .horizontal
         
         addSubview(stack)
         stack.snp.makeConstraints { make in
