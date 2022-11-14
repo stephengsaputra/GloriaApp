@@ -10,19 +10,19 @@ import UIKit
 class EmptyTicketView: UIView {
 
     // MARK: - Properties
-    private lazy var emptyHeadingLabel: GLabel = {
+    internal lazy var emptyHeadingLabel: GLabel = {
         let label = GLabel(style: .heading2, textString: "Tidak ada acara selanjutnya")
         return label
     }()
     
-    private lazy var emptyBodyLabel: GLabel = {
+    internal lazy var emptyBodyLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "Waduh! Kelihatannya kamu tidak mendaftar ke acara apapun")
         label.textAlignment = .center
         label.textColor = .secondaryTextColor
         return label
     }()
     
-    private lazy var emptyCTAButton: UIButton = {
+    internal lazy var emptyCTAButton: UIButton = {
         let button = UIButton()
         
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Ketuk untuk mendaftar ke sebuah acara")

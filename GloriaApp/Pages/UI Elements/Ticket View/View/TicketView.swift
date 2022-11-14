@@ -10,29 +10,29 @@ import UIKit
 class TicketView: UIView {
 
     // MARK: - Properties
-    private lazy var eventNameLabel: GLabel = {
+    internal lazy var eventNameLabel: GLabel = {
         let label = GLabel(style: .heading2, textString: "Kebaktian Umum 2")
         return label
     }()
     
-    private lazy var eventTypeLabel: GLabel = {
+    internal lazy var eventTypeLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "Umum")
         return label
     }()
     
-    private lazy var eventLocationLabel: GLabel = {
+    internal lazy var eventLocationLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "GKA Gloria Pacar")
         label.textColor = .secondaryTextColor
         return label
     }()
     
-    private lazy var eventDateLabel: GLabel = {
+    internal lazy var eventDateLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "Minggu, 2 Januari 2022")
         label.textColor = .secondaryTextColor
         return label
     }()
     
-    private lazy var eventTimeLabel: GLabel = {
+    internal lazy var eventTimeLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "09.00")
         label.textColor = .secondaryTextColor
         return label

@@ -10,17 +10,17 @@ import UIKit
 class VerseOfTheDayView: UIView {
 
     // MARK: - Properties
-    private lazy var headingLabel: GLabel = {
+    internal lazy var headingLabel: GLabel = {
         let label = GLabel(style: .heading1, textString: "Verse of the Day")
         return label
     }()
     
-    private lazy var verseLabel: GLabel = {
+    internal lazy var verseLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "Memang tiap-tiap ganjaran pada waktu ia diberikan tidak mendatangkan sukacita, tetapi dukacita. Tetapi kemudian ia menghasilkan buah kebenaran yang memberikan damai kepada mereka yang dilatih olehnya.")
         return label
     }()
     
-    private lazy var verseNameLabel: GLabel = {
+    internal lazy var verseNameLabel: GLabel = {
         let label = GLabel(style: .caption1, textString: "Ibrani 12:11")
         return label
     }()
