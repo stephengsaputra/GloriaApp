@@ -27,13 +27,6 @@ class HomeVC: UIViewController {
         table.backgroundColor = .backgroundColor
         table.backgroundView = HomeBG()
         
-        table.contentInset = UIEdgeInsets(
-            top: UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 16 : 10,
-            left: 0,
-            bottom: 0,
-            right: 0
-        )
-        
         return table
     }()
     

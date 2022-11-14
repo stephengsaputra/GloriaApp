@@ -77,11 +77,11 @@ extension HomeVC: UIScrollViewDelegate {
 
 struct Const {
     
-    static let ImageSizeForLargeState: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 60 : 50
+    static let ImageSizeForLargeState: CGFloat = 50
     static let ImageRightMargin: CGFloat = 20
     static let ImageBottomMarginForLargeState: CGFloat = 0
     static let ImageBottomMarginForSmallState: CGFloat = 0
-    static let ImageSizeForSmallState: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 60 : 50
+    static let ImageSizeForSmallState: CGFloat = 50
     static let NavBarHeightSmallState: CGFloat = 44
     static let NavBarHeightLargeState: CGFloat = 96
 }

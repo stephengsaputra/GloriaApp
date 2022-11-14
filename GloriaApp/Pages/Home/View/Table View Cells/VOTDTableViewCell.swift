@@ -23,7 +23,7 @@ class VOTDTableViewCell: UITableViewCell {
         contentView.addSubview(votd)
         votd.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
-            make.top.equalTo(contentView.snp.top)
+            make.top.equalTo(contentView.snp.top).offset(20)
             make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
     }
