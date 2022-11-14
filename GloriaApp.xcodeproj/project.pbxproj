@@ -36,6 +36,12 @@
 		DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F329214B2000D4F561 /* TicketView.swift */; };
 		DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */; };
 		DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DB965C922922A1EF00AE86BC /* SkeletonView */; };
+		DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */; };
+		DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */; };
+		DBECCC252922C1E900CCEA63 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */; };
+		DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */; };
+		DBECCC292922C44F00CCEA63 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC282922C44F00CCEA63 /* ButtonTableViewCell.swift */; };
+		DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +73,12 @@
 		DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTicketView.swift; sourceTree = "<group>"; };
 		DB95F3F329214B2000D4F561 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHomePageButton.swift; sourceTree = "<group>"; };
+		DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableEventView.swift; sourceTree = "<group>"; };
+		DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventVC.swift; sourceTree = "<group>"; };
+		DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		DBECCC282922C44F00CCEA63 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseEventVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,8 @@
 			children = (
 				DB5EDE3F291FA47E00AE0386 /* Onboarding */,
 				DB95F3E1292133CA00D4F561 /* Home */,
+				DBECCC1B2922BF0500CCEA63 /* Choose Event */,
+				DBECCC1E2922BF3F00CCEA63 /* Final Register Check */,
 				DB95F3E829213C8E00D4F561 /* UI Elements */,
 			);
 			path = Pages;
@@ -245,6 +259,7 @@
 		DB95F3E829213C8E00D4F561 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				DBECCC172922BE0500CCEA63 /* Event View */,
 				DB95F3F529214B5100D4F561 /* HomePageButton */,
 				DB95F3F129214AF900D4F561 /* Ticket View */,
 				DB95F3ED2921471800D4F561 /* Ticket View (Empty) */,
@@ -315,6 +330,81 @@
 				DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC172922BE0500CCEA63 /* Event View */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC182922BE2400CCEA63 /* View */,
+			);
+			path = "Event View";
+			sourceTree = "<group>";
+		};
+		DBECCC182922BE2400CCEA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC1B2922BF0500CCEA63 /* Choose Event */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC1D2922BF3000CCEA63 /* View Model */,
+				DBECCC1C2922BF2A00CCEA63 /* View */,
+			);
+			path = "Choose Event";
+			sourceTree = "<group>";
+		};
+		DBECCC1C2922BF2A00CCEA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */,
+				DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */,
+				DBECCC232922C1AB00CCEA63 /* Table View Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC1D2922BF3000CCEA63 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DBECCC1E2922BF3F00CCEA63 /* Final Register Check */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC202922BF6D00CCEA63 /* View Model */,
+				DBECCC1F2922BF6800CCEA63 /* View */,
+			);
+			path = "Final Register Check";
+			sourceTree = "<group>";
+		};
+		DBECCC1F2922BF6800CCEA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC202922BF6D00CCEA63 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DBECCC232922C1AB00CCEA63 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */,
+				DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */,
+				DBECCC282922C44F00CCEA63 /* ButtonTableViewCell.swift */,
+			);
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,9 +492,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */,
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
 				DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */,
+				DBECCC292922C44F00CCEA63 /* ButtonTableViewCell.swift in Sources */,
+				DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */,
 				DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */,
+				DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
@@ -416,10 +510,12 @@
 				DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */,
 				DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */,
 				DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */,
+				DBECCC252922C1E900CCEA63 /* HeaderTableViewCell.swift in Sources */,
 				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
 				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,
 				DB0917BE292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift in Sources */,
+				DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */,
 				DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

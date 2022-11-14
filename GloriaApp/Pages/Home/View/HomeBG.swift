@@ -13,7 +13,7 @@ class HomeBG: UIImageView {
         
         super.init(frame: .zero)
         self.image = UIImage(named: "HomeBG")
-        self.contentMode = .scaleAspectFill
+        self.contentMode = .scaleToFill
     }
     
     required init?(coder: NSCoder) {

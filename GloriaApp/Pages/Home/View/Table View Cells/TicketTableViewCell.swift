@@ -18,7 +18,7 @@ class TicketTableViewCell: UITableViewCell {
         return label
     }()
     
-    let ticketView = TicketView()
+    let ticketView = EmptyTicketView()
     
     // MARK: - Helpers
     func configureUI() {

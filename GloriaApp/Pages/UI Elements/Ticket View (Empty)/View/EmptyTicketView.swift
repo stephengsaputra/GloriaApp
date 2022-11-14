@@ -51,7 +51,7 @@ class EmptyTicketView: UIView {
 
     // MARK: - Selectors
     @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
-        print("DEBUG: Hello, world!")
+        
     }
     
     // MARK: - Helpers
