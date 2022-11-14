@@ -32,6 +32,13 @@ class HomeVC: UIViewController {
         return table
     }()
     
+    internal lazy var profileButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "profile_icon"), for: .normal)
+        button.addTarget(self, action: #selector(handleProfileButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         
@@ -41,6 +48,9 @@ class HomeVC: UIViewController {
     }
     
     // MARK: - Selectors
+    @objc func handleProfileButtonTapped() {
+        print("Hello, world!")
+    }
     
     // MARK: - Helpers
     func configureUI() {
@@ -73,5 +83,19 @@ class HomeVC: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
+        
+        guard let navigationBar = self.navigationController?.navigationBar else { return }
+        
+        navigationBar.addSubview(profileButton)
+        profileButton.layer.cornerRadius = Const.ImageSizeForLargeState / 2
+        profileButton.imageView?.contentMode = .scaleAspectFill
+        profileButton.clipsToBounds = true
+        profileButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            profileButton.rightAnchor.constraint(equalTo: navigationBar.rightAnchor, constant: -Const.ImageRightMargin),
+            profileButton.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -Const.ImageBottomMarginForLargeState),
+            profileButton.heightAnchor.constraint(equalToConstant: Const.ImageSizeForLargeState),
+            profileButton.widthAnchor.constraint(equalTo: profileButton.heightAnchor)
+        ])
     }
 }
