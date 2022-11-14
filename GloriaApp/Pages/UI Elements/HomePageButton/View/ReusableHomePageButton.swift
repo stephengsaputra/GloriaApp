@@ -71,7 +71,7 @@ class ReusableHomePageButton: UIButton {
         super.touchesBegan(touches, with: event)
         
         UIView.animate(
-            withDuration: 0.1,
+            withDuration: 0.05,
             delay: 0,
             options: [.allowUserInteraction, .curveEaseInOut]) {
                 self.transform = .init(scaleX: 0.99, y: 0.99)
