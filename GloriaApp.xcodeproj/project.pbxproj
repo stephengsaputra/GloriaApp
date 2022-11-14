@@ -35,6 +35,7 @@
 		DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */; };
 		DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F329214B2000D4F561 /* TicketView.swift */; };
 		DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */; };
+		DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DB965C922922A1EF00AE86BC /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5EDE3A291FA44200AE0386 /* SnapKit in Frameworks */,
+				DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */,
 				DB5EDE3D291FA45000AE0386 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +336,7 @@
 			packageProductDependencies = (
 				DB5EDE39291FA44200AE0386 /* SnapKit */,
 				DB5EDE3C291FA45000AE0386 /* IQKeyboardManagerSwift */,
+				DB965C922922A1EF00AE86BC /* SkeletonView */,
 			);
 			productName = GloriaApp;
 			productReference = DB393C6F291F9985003ADAB9 /* GloriaApp.app */;
@@ -366,6 +369,7 @@
 			packageReferences = (
 				DB5EDE38291FA44200AE0386 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DB965C912922A1EF00AE86BC /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = DB393C70291F9985003ADAB9 /* Products */;
 			projectDirPath = "";
@@ -662,6 +666,14 @@
 				kind = branch;
 			};
 		};
+		DB965C912922A1EF00AE86BC /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -674,6 +686,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		DB965C922922A1EF00AE86BC /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB965C912922A1EF00AE86BC /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
