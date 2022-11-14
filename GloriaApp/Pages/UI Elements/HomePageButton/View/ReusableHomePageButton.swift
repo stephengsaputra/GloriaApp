@@ -9,15 +9,19 @@ import UIKit
 
 class ReusableHomePageButton: UIButton {
     
-    public private(set) var imageBG: String
-    public private(set) var buttonText: String
+    enum Style {
+        case cutToCut
+        case churchEvents
+        case lectioDivina
+    }
+    
+    public private(set) var type: Style
     public private(set) var selector: Selector
     public private(set) var target: Any
     
-    init(imageBG: String, buttonText: String, selector: Selector, target: Any) {
+    init(type: Style, selector: Selector, target: Any) {
         
-        self.imageBG = imageBG
-        self.buttonText = buttonText
+        self.type = type
         self.selector = selector
         self.target = target
         
@@ -36,14 +40,23 @@ class ReusableHomePageButton: UIButton {
     
     private func configureButton() {
         
-        self.setBackgroundImage(UIImage(named: imageBG), for: .normal)
+        switch type {
+            case .cutToCut:
+                self.setBackgroundImage(UIImage(named: "cutToCut"), for: .normal)
+                self.setTitle("Cut To Cut Ibadah Series", for: .normal)
+            case .churchEvents:
+                self.setBackgroundImage(UIImage(named: "churchEvents"), for: .normal)
+                self.setTitle("Church Events", for: .normal)
+            case .lectioDivina:
+                self.setBackgroundImage(UIImage(named: "lectioDivina"), for: .normal)
+                self.setTitle("Lectio Divina", for: .normal)
+        }
         
         self.addDressing(useShadow: true, useCornerRadius: true, useBorder: false)
         self.clipsToBounds = true
         
         self.adjustsImageWhenHighlighted = false
         
-        self.setTitle(buttonText, for: .normal)
         self.setTitleColor(.white, for: .normal)
         self.titleLabel?.font = UIFont.caption1()
         

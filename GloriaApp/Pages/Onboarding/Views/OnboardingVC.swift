@@ -20,7 +20,7 @@ class OnboardingVC: UIViewController {
     }()
     
     internal lazy var headingLabel: GLabel = {
-        let label = GLabel(style: .largeTitle, textString: "Selamat datang!")
+        let label = GLabel(style: .largeTitle2, textString: "Selamat datang!")
         return label
     }()
     
@@ -44,7 +44,7 @@ class OnboardingVC: UIViewController {
     
     // MARK: - Selectors
     @objc func handleButton() {
-        print("DEBUG: Hello, world!")
+        navigationController?.pushViewController(HomeVC(), animated: true)
     }
     
     // MARK: - Helpers

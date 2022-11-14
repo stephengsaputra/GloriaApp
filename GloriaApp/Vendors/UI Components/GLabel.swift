@@ -10,7 +10,8 @@ import UIKit
 class GLabel: UILabel {
 
     enum Style {
-        case largeTitle
+        case largeTitle1
+        case largeTitle2
         case heading1
         case heading2
         case heading3
@@ -54,8 +55,17 @@ class GLabel: UILabel {
         let paragraphStyle = NSMutableParagraphStyle()
         
         switch style {
-            case .largeTitle:
-                self.font = UIFont.largeTitle()
+            case .largeTitle1:
+                self.font = UIFont.largeTitle1()
+                paragraphStyle.minimumLineHeight = CGFloat(40)
+                paragraphStyle.maximumLineHeight = CGFloat(40)
+                self.attributedText = NSAttributedString(
+                    string: textString,
+                    attributes: [
+                        .paragraphStyle: paragraphStyle
+                    ])
+            case .largeTitle2:
+                self.font = UIFont.largeTitle2()
                 paragraphStyle.minimumLineHeight = CGFloat(40)
                 paragraphStyle.maximumLineHeight = CGFloat(40)
                 self.attributedText = NSAttributedString(
