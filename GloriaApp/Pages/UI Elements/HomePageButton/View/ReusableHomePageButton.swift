@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ReusableHomePageButton: UIButton {
     
@@ -71,11 +72,11 @@ class ReusableHomePageButton: UIButton {
         super.touchesBegan(touches, with: event)
         
         UIView.animate(
-            withDuration: 0.05,
+            withDuration: 0.2,
             delay: 0,
-            options: [.allowUserInteraction, .curveEaseInOut]) {
+            options: [.allowUserInteraction, .curveEaseIn]) {
                 self.transform = .init(scaleX: 0.99, y: 0.99)
-                self.alpha = 0.9
+                self.alpha = 0.5
             }
     }
     
@@ -84,7 +85,7 @@ class ReusableHomePageButton: UIButton {
         super.touchesEnded(touches, with: event)
         
         UIView.animate(
-            withDuration: 0.05,
+            withDuration: 0.1,
             delay: 0,
             options: [.allowUserInteraction, .curveEaseOut]) {
                 self.transform = .identity

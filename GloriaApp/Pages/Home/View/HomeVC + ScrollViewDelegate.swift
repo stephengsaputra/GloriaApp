@@ -62,9 +62,7 @@ extension HomeVC: UIScrollViewDelegate {
                         UIApplication.shared.statusBarStyle = .darkContent
                 }
             }
-            
         } else {
-
             UIView.animate(withDuration: 0.1) {
                 
                 self.profileButton.alpha = 1
@@ -79,11 +77,11 @@ extension HomeVC: UIScrollViewDelegate {
 
 struct Const {
     
-    static let ImageSizeForLargeState: CGFloat = 61
+    static let ImageSizeForLargeState: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 60 : 50
     static let ImageRightMargin: CGFloat = 20
     static let ImageBottomMarginForLargeState: CGFloat = 0
     static let ImageBottomMarginForSmallState: CGFloat = 0
-    static let ImageSizeForSmallState: CGFloat = 61
+    static let ImageSizeForSmallState: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 60 : 50
     static let NavBarHeightSmallState: CGFloat = 44
     static let NavBarHeightLargeState: CGFloat = 96
 }

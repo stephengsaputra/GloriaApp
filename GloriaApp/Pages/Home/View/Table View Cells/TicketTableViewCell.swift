@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class TicketTableViewCell: UITableViewCell {
 
@@ -17,22 +18,23 @@ class TicketTableViewCell: UITableViewCell {
         return label
     }()
     
-    let ticketView = EmptyTicketView()
+    let ticketView = TicketView()
     
     // MARK: - Helpers
     func configureUI() {
         
         contentView.backgroundColor = .clear
         
-        let stack = UIStackView(arrangedSubviews: [upcomingEventLabel, ticketView])
-        stack.alignment = .leading
-        stack.spacing = 6
-        stack.axis = .vertical
-        
-        contentView.addSubview(stack)
-        stack.snp.makeConstraints { make in
+        contentView.addSubview(upcomingEventLabel)
+        upcomingEventLabel.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
             make.top.equalTo(contentView.snp.top)
+        }
+        
+        contentView.addSubview(ticketView)
+        ticketView.snp.makeConstraints { make in
+            make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
+            make.top.equalTo(upcomingEventLabel.snp.bottom).offset(6 )
             make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
     }
