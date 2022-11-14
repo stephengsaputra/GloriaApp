@@ -9,7 +9,16 @@ import UIKit
 
 extension UIFont {
     
-    static func largeTitle() -> UIFont {
+    static func largeTitle1() -> UIFont {
+        
+        guard let customFont = UIFont(name: "Poppins-Bold", size: 32) else {
+            return UIFont.systemFont(ofSize: 28)
+        }
+        
+        return customFont
+    }
+    
+    static func largeTitle2() -> UIFont {
         
         guard let customFont = UIFont(name: "Poppins-Bold", size: 28) else {
             return UIFont.systemFont(ofSize: 28)
@@ -63,15 +72,6 @@ extension UIFont {
         return customFont
     }
     
-    static func caption3() -> UIFont {
-        
-        guard let customFont = UIFont(name: "Poppins-Medium", size: 13) else {
-            return UIFont.systemFont(ofSize: 13)
-        }
-        
-        return customFont
-    }
-    
     static func buttonText() -> UIFont {
         
         guard let customFont = UIFont(name: "Poppins-Medium", size: 15) else {
@@ -83,7 +83,7 @@ extension UIFont {
     
     static func bodyText() -> UIFont {
         
-        guard let customFont = UIFont(name: "Poppins-Regular", size: 15) else {
+        guard let customFont = UIFont(name: "Poppins-Regular", size: 16) else {
             return UIFont.systemFont(ofSize: 15)
         }
         

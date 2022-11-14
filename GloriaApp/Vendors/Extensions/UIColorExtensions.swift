@@ -15,7 +15,7 @@ extension UIColor {
     static let backgroundColor = UIColor.init(named: "backgroundColor")
     
     static let contentBG = UIColor.init(named: "contentBG")
-    static let contentBorder = UIColor.init(named: "contentColor")
+    static let contentBorder = UIColor.init(named: "contentBorder")
     
     static let dropShadow = UIColor.init(named: "dropShadow")
     

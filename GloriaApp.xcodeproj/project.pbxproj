@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0917BE292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */; };
+		DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */; };
+		DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */; };
+		DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */; };
+		DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */; };
+		DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */; };
 		DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C72291F9985003ADAB9 /* AppDelegate.swift */; };
 		DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C74291F9985003ADAB9 /* SceneDelegate.swift */; };
 		DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C76291F9985003ADAB9 /* OnboardingVC.swift */; };
@@ -23,9 +29,21 @@
 		DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */; };
 		DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE53291FA54C00AE0386 /* GButton.swift */; };
 		DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE55291FA55900AE0386 /* GLabel.swift */; };
+		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
+		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
+		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
+		DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */; };
+		DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F329214B2000D4F561 /* TicketView.swift */; };
+		DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC + ScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
+		DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOTDTableViewCell.swift; sourceTree = "<group>"; };
+		DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBG.swift; sourceTree = "<group>"; };
+		DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
 		DB393C6F291F9985003ADAB9 /* GloriaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloriaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB393C72291F9985003ADAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB393C74291F9985003ADAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +60,12 @@
 		DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		DB5EDE53291FA54C00AE0386 /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
 		DB5EDE55291FA55900AE0386 /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
+		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
+		DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTicketView.swift; sourceTree = "<group>"; };
+		DB95F3F329214B2000D4F561 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHomePageButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0917BC2922196900B405B1 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */,
+				DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */,
+				DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		DB393C66291F9985003ADAB9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				DB5EDE3F291FA47E00AE0386 /* Onboarding */,
+				DB95F3E1292133CA00D4F561 /* Home */,
+				DB95F3E829213C8E00D4F561 /* UI Elements */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -151,6 +187,7 @@
 			children = (
 				DB5EDE47291FA4D100AE0386 /* UIColorExtensions.swift */,
 				DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */,
+				DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +210,109 @@
 				DB5EDE4A291FA4EE00AE0386 /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB95F3E1292133CA00D4F561 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3E3292133D900D4F561 /* View Model */,
+				DB95F3E2292133D500D4F561 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DB95F3E2292133D500D4F561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */,
+				DB95F3E4292133F200D4F561 /* HomeVC.swift */,
+				DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */,
+				DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */,
+				DB0917BC2922196900B405B1 /* Table View Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB95F3E3292133D900D4F561 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DB95F3E829213C8E00D4F561 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3F529214B5100D4F561 /* HomePageButton */,
+				DB95F3F129214AF900D4F561 /* Ticket View */,
+				DB95F3ED2921471800D4F561 /* Ticket View (Empty) */,
+				DB95F3E929213CAF00D4F561 /* Verse of the Day */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		DB95F3E929213CAF00D4F561 /* Verse of the Day */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3EA29213CB800D4F561 /* View */,
+			);
+			path = "Verse of the Day";
+			sourceTree = "<group>";
+		};
+		DB95F3EA29213CB800D4F561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB95F3ED2921471800D4F561 /* Ticket View (Empty) */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3EE2921474600D4F561 /* View */,
+			);
+			path = "Ticket View (Empty)";
+			sourceTree = "<group>";
+		};
+		DB95F3EE2921474600D4F561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB95F3F129214AF900D4F561 /* Ticket View */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3F229214B1200D4F561 /* View */,
+			);
+			path = "Ticket View";
+			sourceTree = "<group>";
+		};
+		DB95F3F229214B1200D4F561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3F329214B2000D4F561 /* TicketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB95F3F529214B5100D4F561 /* HomePageButton */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3F629214CF900D4F561 /* View */,
+			);
+			path = HomePageButton;
+			sourceTree = "<group>";
+		};
+		DB95F3F629214CF900D4F561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +399,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
+				DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */,
+				DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
 				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
+				DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */,
+				DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */,
+				DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */,
+				DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */,
+				DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */,
+				DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */,
+				DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */,
+				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
+				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,
+				DB0917BE292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift in Sources */,
 				DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +572,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +605,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

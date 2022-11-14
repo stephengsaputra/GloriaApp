@@ -11,7 +11,7 @@ import SnapKit
 class OnboardingVC: UIViewController {
     
     // MARK: - Properties
-    private lazy var gkaIcon: UIImageView = {
+    internal lazy var gkaIcon: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "gka_icon")
         image.backgroundColor = .primaryColor
@@ -19,18 +19,18 @@ class OnboardingVC: UIViewController {
         return image
     }()
     
-    private lazy var headingLabel: GLabel = {
-        let label = GLabel(style: .largeTitle, textString: "Selamat datang!")
+    internal lazy var headingLabel: GLabel = {
+        let label = GLabel(style: .largeTitle2, textString: "Selamat datang!")
         return label
     }()
     
-    private lazy var subheadingLabel: GLabel = {
+    internal lazy var subheadingLabel: GLabel = {
         let label = GLabel(style: .bodyText, textString: "Akses informasi terbaru tentang gereja dan tumbuh semakin dekat kepada Tuhan")
         label.textAlignment = .center
         return label
     }()
     
-    private lazy var button: GButton = {
+    internal lazy var button: GButton = {
         let button = GButton(style: .primary, buttonText: "Mulai", selector: #selector(handleButton), target: self)
         return button
     }()
@@ -44,7 +44,7 @@ class OnboardingVC: UIViewController {
     
     // MARK: - Selectors
     @objc func handleButton() {
-        print("DEBUG: Hello, world!")
+        navigationController?.pushViewController(HomeVC(), animated: true)
     }
     
     // MARK: - Helpers
