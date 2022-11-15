@@ -6,6 +6,11 @@
 //
 
 import UIKit
+import SnapKit
+
+protocol ChooseEventDelegate: AnyObject {
+    func showButton()
+}
 
 class ChooseEventVC: UIViewController {
 
@@ -28,7 +33,11 @@ class ChooseEventVC: UIViewController {
         return table
     }()
     
-    let numberOfRow = 3
+    internal lazy var button: GButton = {
+        let button = GButton(style: .primary, buttonText: "Selanjutnya", selector: #selector(handleButton), target: self)
+        button.alpha = 0.0
+        return button
+    }()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -39,7 +48,9 @@ class ChooseEventVC: UIViewController {
     }
     
     // MARK: - Selectors
-    
+    @objc func handleButton() {
+        print("DEBUG: Hello, world!")
+    }
     
     // MARK: - Helpers
     func configureUI() {
@@ -47,6 +58,12 @@ class ChooseEventVC: UIViewController {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(20)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
         }
     }
     
@@ -68,5 +85,14 @@ class ChooseEventVC: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
+    }
+}
+
+extension ChooseEventVC: ChooseEventDelegate {
+    
+    func showButton() {
+        UIView.animate(withDuration: 0.3) {
+            self.button.alpha = 1.0
+        }
     }
 }

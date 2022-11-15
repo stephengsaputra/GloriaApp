@@ -27,8 +27,8 @@ class HeaderTableViewCell: UITableViewCell {
         contentView.addSubview(label)
         label.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
-            make.top.equalTo(contentView.snp.top).offset(20)
-            make.bottom.equalTo(contentView.snp.bottom).offset(-6)
+            make.top.equalTo(contentView.snp.top).offset(10)
+            make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
     }
 }

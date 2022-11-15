@@ -32,9 +32,12 @@ class EventTableViewCell: UITableViewCell {
         }
     }
     
+    var delegate: ChooseEventDelegate?
+    
     // MARK: - Selectors
     @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
         selectedView = sender.view as? ReusableEventView
+        delegate?.showButton()
     }
     
     // MARK: - Helpers
@@ -42,7 +45,7 @@ class EventTableViewCell: UITableViewCell {
         
         contentView.backgroundColor = .clear
         
-        let stack = UIStackView(arrangedSubviews: [eventView1, eventView2, eventView3, eventView4, eventView5])
+        let stack = UIStackView(arrangedSubviews: [eventView1, eventView2, eventView3])
         stack.spacing = 6
         stack.axis = .vertical
         
@@ -58,7 +61,7 @@ class EventTableViewCell: UITableViewCell {
     
     func configureTicketButton() {
         
-        let views = [eventView1, eventView2, eventView3, eventView4, eventView5]
+        let views = [eventView1, eventView2, eventView3]
         
         views.forEach {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
