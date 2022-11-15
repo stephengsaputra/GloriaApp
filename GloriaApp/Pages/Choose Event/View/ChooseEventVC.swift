@@ -62,7 +62,7 @@ class ChooseEventVC: UIViewController {
         view.addSubview(button)
         button.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(20)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 0 : -20)
         }
     }
     
