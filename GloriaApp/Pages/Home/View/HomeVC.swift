@@ -8,6 +8,10 @@
 import UIKit
 import SnapKit
 
+protocol HomeVCDelegate: AnyObject {
+    func navigateToChooseEvent()
+}
+
 class HomeVC: UIViewController {
 
     // MARK: - Properties
@@ -43,6 +47,22 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         configureUI()
         configureNavigation()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        profileButton.alpha = 1
+        configureNavigation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        profileButton.alpha = 0
+        UIApplication.shared.setStatusBarStyle(.default, animated: true)
     }
     
     // MARK: - Selectors

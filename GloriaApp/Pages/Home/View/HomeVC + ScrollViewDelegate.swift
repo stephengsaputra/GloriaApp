@@ -68,6 +68,7 @@ extension HomeVC: UIScrollViewDelegate {
                 self.profileButton.alpha = 1
                 
                 self.title = "Shalom"
+                
                 self.tableView.backgroundView?.alpha = 1
                 UIApplication.shared.statusBarStyle = .lightContent
             }

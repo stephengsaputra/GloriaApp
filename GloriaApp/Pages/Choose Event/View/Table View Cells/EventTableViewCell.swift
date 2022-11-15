@@ -17,6 +17,11 @@ class EventTableViewCell: UITableViewCell {
     let eventView3 = ReusableEventView()
     let eventView4 = ReusableEventView()
     let eventView5 = ReusableEventView()
+    let eventView6 = ReusableEventView()
+    let eventView7 = ReusableEventView()
+    let eventView8 = ReusableEventView()
+    let eventView9 = ReusableEventView()
+    let eventView10 = ReusableEventView()
     
     weak var selectedView: ReusableEventView? { willSet {
         
@@ -45,7 +50,7 @@ class EventTableViewCell: UITableViewCell {
         
         contentView.backgroundColor = .clear
         
-        let stack = UIStackView(arrangedSubviews: [eventView1, eventView2, eventView3])
+        let stack = UIStackView(arrangedSubviews: [eventView1, eventView2, eventView3, eventView4, eventView5, eventView6, eventView7, eventView8, eventView9, eventView10])
         stack.spacing = 6
         stack.axis = .vertical
         
@@ -61,7 +66,7 @@ class EventTableViewCell: UITableViewCell {
     
     func configureTicketButton() {
         
-        let views = [eventView1, eventView2, eventView3]
+        let views = [eventView1, eventView2, eventView3, eventView4, eventView5, eventView6, eventView7, eventView8, eventView9, eventView10]
         
         views.forEach {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))

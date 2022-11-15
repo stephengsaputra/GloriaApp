@@ -40,7 +40,6 @@
 		DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */; };
 		DBECCC252922C1E900CCEA63 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */; };
 		DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */; };
-		DBECCC292922C44F00CCEA63 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC282922C44F00CCEA63 /* ButtonTableViewCell.swift */; };
 		DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +76,6 @@
 		DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventVC.swift; sourceTree = "<group>"; };
 		DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
-		DBECCC282922C44F00CCEA63 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseEventVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -402,7 +400,6 @@
 			children = (
 				DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */,
 				DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */,
-				DBECCC282922C44F00CCEA63 /* ButtonTableViewCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -495,7 +492,6 @@
 				DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */,
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
 				DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */,
-				DBECCC292922C44F00CCEA63 /* ButtonTableViewCell.swift in Sources */,
 				DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */,
 				DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */,
 				DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */,

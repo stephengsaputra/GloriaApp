@@ -17,12 +17,12 @@ class VerseOfTheDayView: UIView {
     }()
     
     internal lazy var verseLabel: GLabel = {
-        let label = GLabel(style: .bodyText, textString: "Memang tiap-tiap ganjaran pada waktu ia diberikan tidak mendatangkan sukacita, tetapi dukacita. Tetapi kemudian ia menghasilkan buah kebenaran yang memberikan damai kepada mereka yang dilatih olehnya.")
+        let label = GLabel(style: .bodyText, textString: "Pencobaan-pencobaan yang kamu alami ialah pencobaan-pencobaan biasa, yang tidak melebihi kekuatan manusia. Sebab Allah setia dan karena itu Ia tidak akan membiarkan kamu dicobai melampaui kekuatanmu. Pada waktu kamu dicobai Ia akan memberikan kepadamu jalan ke luar, sehingga kamu dapat menanggungnya.")
         return label
     }()
     
     internal lazy var verseNameLabel: GLabel = {
-        let label = GLabel(style: .caption1, textString: "Ibrani 12:11")
+        let label = GLabel(style: .caption1, textString: "1 Korintus 10:13")
         return label
     }()
     

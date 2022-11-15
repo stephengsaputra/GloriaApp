@@ -21,7 +21,6 @@ class ChooseEventVC: UIViewController {
         
         table.register(HeaderTableViewCell.self, forCellReuseIdentifier: HeaderTableViewCell.identifier)
         table.register(EventTableViewCell.self, forCellReuseIdentifier: EventTableViewCell.identifier)
-        table.register(ButtonTableViewCell.self, forCellReuseIdentifier: ButtonTableViewCell.identifier)
         
         table.delegate = self
         table.dataSource = self
@@ -74,6 +73,10 @@ class ChooseEventVC: UIViewController {
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.backgroundColor = .backgroundColor
+        navBarAppearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.largeTitle1()
+        ]
         navBarAppearance.titleTextAttributes = [
             .foregroundColor: UIColor.textColor ?? UIColor.label,
             .font: UIFont.heading2()
@@ -84,6 +87,7 @@ class ChooseEventVC: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.primaryColor
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
     }
 }
@@ -91,7 +95,7 @@ class ChooseEventVC: UIViewController {
 extension ChooseEventVC: ChooseEventDelegate {
     
     func showButton() {
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.2) {
             self.button.alpha = 1.0
         }
     }
