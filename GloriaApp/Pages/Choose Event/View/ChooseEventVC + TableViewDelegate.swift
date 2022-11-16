@@ -16,7 +16,7 @@ extension ChooseEventVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier) as! HeaderTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: ChooseEventHeaderTableViewCell.identifier) as! ChooseEventHeaderTableViewCell
             cell.configureUI()
             
             cell.backgroundColor = .clear

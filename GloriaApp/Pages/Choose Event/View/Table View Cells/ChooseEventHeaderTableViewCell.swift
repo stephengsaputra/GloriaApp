@@ -7,9 +7,9 @@
 
 import UIKit
 
-class HeaderTableViewCell: UITableViewCell {
+class ChooseEventHeaderTableViewCell: UITableViewCell {
 
-    static let identifier = "HeaderTableViewCell"
+    static let identifier = "ChooseEventHeaderTableViewCell"
     
     // MARK: - Properties
     internal lazy var label: GLabel = {

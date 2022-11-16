@@ -29,6 +29,8 @@
 		DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */; };
 		DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE53291FA54C00AE0386 /* GButton.swift */; };
 		DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE55291FA55900AE0386 /* GLabel.swift */; };
+		DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */; };
+		DB70DF4F29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
@@ -38,7 +40,7 @@
 		DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DB965C922922A1EF00AE86BC /* SkeletonView */; };
 		DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */; };
 		DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */; };
-		DBECCC252922C1E900CCEA63 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */; };
+		DBECCC252922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC242922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift */; };
 		DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */; };
 		DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		DB5EDE53291FA54C00AE0386 /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
 		DB5EDE55291FA55900AE0386 /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
+		DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckVC.swift; sourceTree = "<group>"; };
+		DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
@@ -74,7 +78,7 @@
 		DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHomePageButton.swift; sourceTree = "<group>"; };
 		DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableEventView.swift; sourceTree = "<group>"; };
 		DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventVC.swift; sourceTree = "<group>"; };
-		DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DBECCC242922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseEventVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +228,14 @@
 				DB5EDE4A291FA4EE00AE0386 /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB70DF4D29247C530018E2FC /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */,
+			);
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 		DB95F3E1292133CA00D4F561 /* Home */ = {
@@ -384,6 +396,8 @@
 		DBECCC1F2922BF6800CCEA63 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */,
+				DB70DF4D29247C530018E2FC /* Table View Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -398,7 +412,7 @@
 		DBECCC232922C1AB00CCEA63 /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DBECCC242922C1E900CCEA63 /* HeaderTableViewCell.swift */,
+				DBECCC242922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift */,
 				DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */,
 			);
 			path = "Table View Cells";
@@ -489,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB70DF4F29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift in Sources */,
 				DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */,
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
 				DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */,
@@ -506,7 +521,8 @@
 				DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */,
 				DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */,
 				DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */,
-				DBECCC252922C1E900CCEA63 /* HeaderTableViewCell.swift in Sources */,
+				DBECCC252922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift in Sources */,
+				DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */,
 				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
 				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,

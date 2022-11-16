@@ -1,26 +1,21 @@
 //
-//  ChooseEventVC.swift
+//  FinalCheckVC.swift
 //  GloriaApp
 //
-//  Created by Stephen Giovanni Saputra on 15/11/22.
+//  Created by Stephen Giovanni Saputra on 16/11/22.
 //
 
 import UIKit
 import SnapKit
 
-protocol ChooseEventDelegate: AnyObject {
-    func showButton()
-}
-
-class ChooseEventVC: UIViewController {
+class FinalCheckVC: UIViewController {
 
     // MARK: - Properties
     internal lazy var tableView: UITableView = {
         
         let table = UITableView()
         
-        table.register(ChooseEventHeaderTableViewCell.self, forCellReuseIdentifier: ChooseEventHeaderTableViewCell.identifier)
-        table.register(EventTableViewCell.self, forCellReuseIdentifier: EventTableViewCell.identifier)
+        table.register(FinalCheckHeaderTableViewCell.self, forCellReuseIdentifier: FinalCheckHeaderTableViewCell.identifier)
         
         table.delegate = self
         table.dataSource = self
@@ -32,37 +27,26 @@ class ChooseEventVC: UIViewController {
         return table
     }()
     
-    internal lazy var button: GButton = {
-        let button = GButton(style: .primary, buttonText: "Selanjutnya", selector: #selector(handleButton), target: self)
-        button.alpha = 0.0
-        return button
-    }()
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         configureNavigation()
         configureUI()
     }
     
     // MARK: - Selectors
-    @objc func handleButton() {
-        navigationController?.pushViewController(FinalCheckVC(), animated: true)
-    }
+    
     
     // MARK: - Helpers
     func configureUI() {
         
+        view.backgroundColor = .backgroundColor
+        
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-        }
-        
-        view.addSubview(button)
-        button.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview().inset(20)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0 > 20 ? 0 : -20)
         }
     }
     
@@ -92,11 +76,22 @@ class ChooseEventVC: UIViewController {
     }
 }
 
-extension ChooseEventVC: ChooseEventDelegate {
+extension FinalCheckVC: UITableViewDelegate, UITableViewDataSource {
     
-    func showButton() {
-        UIView.animate(withDuration: 0.2) {
-            self.button.alpha = 1.0
-        }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+//        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: FinalCheckHeaderTableViewCell.identifier) as! FinalCheckHeaderTableViewCell
+            cell.configureUI()
+            
+            cell.backgroundColor = .clear
+            cell.selectionStyle = .none
+            
+            return cell
+//        }
     }
 }
