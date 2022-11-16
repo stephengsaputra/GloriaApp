@@ -45,7 +45,7 @@ class OnboardingVC: UIViewController {
     // MARK: - Selectors
     @objc func handleButton() {
         
-        let vc = UINavigationController(rootViewController: ChooseEventVC())
+        let vc = UINavigationController(rootViewController: HomeVC())
         vc.modalTransitionStyle = .coverVertical
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)

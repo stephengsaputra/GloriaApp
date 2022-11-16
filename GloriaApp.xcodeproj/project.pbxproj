@@ -11,7 +11,7 @@
 		DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */; };
 		DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */; };
 		DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */; };
-		DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */; };
+		DB2D2AB2292211780097B8D9 /* EmptyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB1292211780097B8D9 /* EmptyTicketTableViewCell.swift */; };
 		DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */; };
 		DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C72291F9985003ADAB9 /* AppDelegate.swift */; };
 		DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C74291F9985003ADAB9 /* SceneDelegate.swift */; };
@@ -31,6 +31,10 @@
 		DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE55291FA55900AE0386 /* GLabel.swift */; };
 		DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */; };
 		DB70DF4F29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */; };
+		DB70DF5129247E710018E2FC /* ChosenEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */; };
+		DB70DF53292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */; };
+		DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */; };
+		DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
@@ -50,7 +54,7 @@
 		DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 		DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOTDTableViewCell.swift; sourceTree = "<group>"; };
 		DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBG.swift; sourceTree = "<group>"; };
-		DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		DB2D2AB1292211780097B8D9 /* EmptyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
 		DB393C6F291F9985003ADAB9 /* GloriaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloriaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB393C72291F9985003ADAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,10 @@
 		DB5EDE55291FA55900AE0386 /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
 		DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckVC.swift; sourceTree = "<group>"; };
 		DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenEventTableViewCell.swift; sourceTree = "<group>"; };
+		DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDiriPengunjungTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCDelegate.swift; sourceTree = "<group>"; };
+		DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
@@ -101,8 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */,
-				DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */,
+				DB2D2AB1292211780097B8D9 /* EmptyTicketTableViewCell.swift */,
 				DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */,
+				DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -234,8 +243,20 @@
 			isa = PBXGroup;
 			children = (
 				DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */,
+				DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */,
+				DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */,
 			);
 			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		DB8B2C7B2924E81300F94D14 /* Home View Controller Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */,
+				DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */,
+				DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */,
+			);
+			path = "Home View Controller Delegates";
 			sourceTree = "<group>";
 		};
 		DB95F3E1292133CA00D4F561 /* Home */ = {
@@ -252,8 +273,7 @@
 			children = (
 				DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */,
 				DB95F3E4292133F200D4F561 /* HomeVC.swift */,
-				DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */,
-				DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */,
+				DB8B2C7B2924E81300F94D14 /* Home View Controller Delegates */,
 				DB0917BC2922196900B405B1 /* Table View Cells */,
 			);
 			path = View;
@@ -512,15 +532,17 @@
 				DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
+				DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
 				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
 				DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */,
 				DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */,
+				DB70DF5129247E710018E2FC /* ChosenEventTableViewCell.swift in Sources */,
 				DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */,
 				DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */,
 				DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */,
 				DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */,
-				DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */,
+				DB2D2AB2292211780097B8D9 /* EmptyTicketTableViewCell.swift in Sources */,
 				DBECCC252922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift in Sources */,
 				DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */,
 				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
@@ -528,6 +550,8 @@
 				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,
 				DB0917BE292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift in Sources */,
 				DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */,
+				DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */,
+				DB70DF53292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift in Sources */,
 				DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

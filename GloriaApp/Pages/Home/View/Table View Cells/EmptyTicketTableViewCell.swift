@@ -2,15 +2,19 @@
 //  TicketTableViewCell.swift
 //  GloriaApp
 //
-//  Created by Stephen Giovanni Saputra on 16/11/22.
+//  Created by Stephen Giovanni Saputra on 14/11/22.
 //
 
 import UIKit
 import SnapKit
 
-class TicketTableViewCell: UITableViewCell {
+protocol EmptyTicketCellDelegate: AnyObject {
+    func triggerNavigation()
+}
 
-    static let identifier = "TicketTableViewCell"
+class EmptyTicketTableViewCell: UITableViewCell {
+
+    static let identifier = "EmptyTicketTableViewCell"
     
     // MARK: - Properties
     internal lazy var upcomingEventLabel: GLabel = {
@@ -18,7 +22,8 @@ class TicketTableViewCell: UITableViewCell {
         return label
     }()
     
-    let ticketView = TicketView()
+    let ticketView = EmptyTicketView()
+    var delegate: HomeVCDelegate?
     
     // MARK: - Helpers
     func configureUI() {
@@ -31,11 +36,19 @@ class TicketTableViewCell: UITableViewCell {
             make.top.equalTo(contentView.snp.top)
         }
         
+        ticketView.delegate = self
         contentView.addSubview(ticketView)
         ticketView.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
             make.top.equalTo(upcomingEventLabel.snp.bottom).offset(6 )
             make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
+    }
+}
+
+extension EmptyTicketTableViewCell: EmptyTicketCellDelegate {
+    
+    func triggerNavigation() {
+        self.delegate?.navigateToChooseEvent()
     }
 }

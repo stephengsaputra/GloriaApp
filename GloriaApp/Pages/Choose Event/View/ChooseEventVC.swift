@@ -84,7 +84,7 @@ class ChooseEventVC: UIViewController {
         
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         
-        navigationController?.navigationBar.tintColor = UIColor.primaryColor
+        navigationController?.navigationBar.tintColor = UIColor.secondaryButtonColor
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationItem.largeTitleDisplayMode = .never

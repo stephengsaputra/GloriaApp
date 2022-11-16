@@ -8,10 +8,6 @@
 import UIKit
 import SnapKit
 
-protocol HomeVCDelegate: AnyObject {
-    func navigateToChooseEvent()
-}
-
 class HomeVC: UIViewController {
 
     // MARK: - Properties
@@ -20,7 +16,7 @@ class HomeVC: UIViewController {
         let table = UITableView()
         
         table.register(VOTDTableViewCell.self, forCellReuseIdentifier: VOTDTableViewCell.identifier)
-        table.register(TicketTableViewCell.self, forCellReuseIdentifier: TicketTableViewCell.identifier)
+        table.register(EmptyTicketTableViewCell.self, forCellReuseIdentifier: EmptyTicketTableViewCell.identifier)
         table.register(HomeButtonTableViewCell.self, forCellReuseIdentifier: HomeButtonTableViewCell.identifier)
         
         table.delegate = self
@@ -97,7 +93,7 @@ class HomeVC: UIViewController {
         
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         
-        navigationController?.navigationBar.tintColor = UIColor.primaryColor
+        navigationController?.navigationBar.tintColor = UIColor.secondaryButtonColor
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal

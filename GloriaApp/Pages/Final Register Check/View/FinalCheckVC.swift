@@ -16,6 +16,8 @@ class FinalCheckVC: UIViewController {
         let table = UITableView()
         
         table.register(FinalCheckHeaderTableViewCell.self, forCellReuseIdentifier: FinalCheckHeaderTableViewCell.identifier)
+        table.register(ChosenEventTableViewCell.self, forCellReuseIdentifier: ChosenEventTableViewCell.identifier)
+        table.register(DataDiriPengunjungTableViewCell.self, forCellReuseIdentifier: DataDiriPengunjungTableViewCell.identifier)
         
         table.delegate = self
         table.dataSource = self
@@ -68,7 +70,7 @@ class FinalCheckVC: UIViewController {
         
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         
-        navigationController?.navigationBar.tintColor = UIColor.primaryColor
+        navigationController?.navigationBar.tintColor = UIColor.secondaryButtonColor
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationItem.largeTitleDisplayMode = .never
@@ -79,12 +81,12 @@ class FinalCheckVC: UIViewController {
 extension FinalCheckVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-//        if indexPath.row == 0 {
+        if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: FinalCheckHeaderTableViewCell.identifier) as! FinalCheckHeaderTableViewCell
             cell.configureUI()
             
@@ -92,6 +94,14 @@ extension FinalCheckVC: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = .none
             
             return cell
-//        }
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: ChosenEventTableViewCell.identifier) as! ChosenEventTableViewCell
+        cell.configureUI()
+        
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        
+        return cell
     }
 }
