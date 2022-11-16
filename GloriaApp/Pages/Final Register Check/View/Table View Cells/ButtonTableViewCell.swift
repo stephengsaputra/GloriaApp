@@ -14,7 +14,7 @@ class ButtonTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     internal lazy var button: GButton = {
-        let button = GButton(style: .primary, buttonText: "Selanjutnya", selector: #selector(handleButton), target: self)
+        let button = GButton(style: .primary, buttonText: "Daftar", selector: #selector(handleButton), target: self)
         return button
     }()
     

@@ -37,6 +37,7 @@
 		DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */; };
 		DB8B2C7F2924EB6E00F94D14 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */; };
 		DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */; };
+		DB8B2C832924EDA200F94D14 /* GTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C822924EDA200F94D14 /* GTextField.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
@@ -82,6 +83,7 @@
 		DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinalCheckVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
+		DB8B2C822924EDA200F94D14 /* GTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextField.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				DB5EDE53291FA54C00AE0386 /* GButton.swift */,
 				DB5EDE55291FA55900AE0386 /* GLabel.swift */,
+				DB8B2C822924EDA200F94D14 /* GTextField.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
 				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,
+				DB8B2C832924EDA200F94D14 /* GTextField.swift in Sources */,
 				DB0917BE292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift in Sources */,
 				DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */,
 				DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */,
