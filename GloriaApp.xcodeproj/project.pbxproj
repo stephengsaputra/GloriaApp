@@ -35,6 +35,8 @@
 		DB70DF53292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */; };
 		DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */; };
 		DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */; };
+		DB8B2C7F2924EB6E00F94D14 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */; };
+		DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
@@ -78,6 +80,8 @@
 		DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDiriPengunjungTableViewCell.swift; sourceTree = "<group>"; };
 		DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCDelegate.swift; sourceTree = "<group>"; };
 		DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinalCheckVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
@@ -163,7 +167,6 @@
 				DB95F3E1292133CA00D4F561 /* Home */,
 				DBECCC1B2922BF0500CCEA63 /* Choose Event */,
 				DBECCC1E2922BF3F00CCEA63 /* Final Register Check */,
-				DB95F3E829213C8E00D4F561 /* UI Elements */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			children = (
 				DB5EDE44291FA4B100AE0386 /* Extensions */,
 				DB5EDE46291FA4C000AE0386 /* Fonts */,
+				DB95F3E829213C8E00D4F561 /* UI Elements */,
 				DB5EDE45291FA4B900AE0386 /* UI Components */,
 			);
 			path = Vendors;
@@ -245,6 +249,7 @@
 				DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */,
 				DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */,
 				DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */,
+				DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */,
+				DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */,
 				DB70DF4D29247C530018E2FC /* Table View Cells */,
 			);
 			path = View;
@@ -523,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8B2C7F2924EB6E00F94D14 /* ButtonTableViewCell.swift in Sources */,
 				DB70DF4F29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift in Sources */,
 				DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */,
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
@@ -533,6 +540,7 @@
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */,
+				DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
 				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
 				DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */,

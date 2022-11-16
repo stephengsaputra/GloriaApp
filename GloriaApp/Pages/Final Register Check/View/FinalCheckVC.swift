@@ -18,6 +18,7 @@ class FinalCheckVC: UIViewController {
         table.register(FinalCheckHeaderTableViewCell.self, forCellReuseIdentifier: FinalCheckHeaderTableViewCell.identifier)
         table.register(ChosenEventTableViewCell.self, forCellReuseIdentifier: ChosenEventTableViewCell.identifier)
         table.register(DataDiriPengunjungTableViewCell.self, forCellReuseIdentifier: DataDiriPengunjungTableViewCell.identifier)
+        table.register(ButtonTableViewCell.self, forCellReuseIdentifier: ButtonTableViewCell.identifier)
         
         table.delegate = self
         table.dataSource = self
@@ -75,33 +76,5 @@ class FinalCheckVC: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
-    }
-}
-
-extension FinalCheckVC: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: FinalCheckHeaderTableViewCell.identifier) as! FinalCheckHeaderTableViewCell
-            cell.configureUI()
-            
-            cell.backgroundColor = .clear
-            cell.selectionStyle = .none
-            
-            return cell
-        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: ChosenEventTableViewCell.identifier) as! ChosenEventTableViewCell
-        cell.configureUI()
-        
-        cell.backgroundColor = .clear
-        cell.selectionStyle = .none
-        
-        return cell
     }
 }

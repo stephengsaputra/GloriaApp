@@ -14,7 +14,7 @@ class DataDiriPengunjungTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     internal lazy var headingLabel: GLabel = {
-        let label = GLabel(style: .heading1, textString: "Ibadah yang ingin diikuti")
+        let label = GLabel(style: .heading1, textString: "Data diri pengunjung")
         return label
     }()
     
