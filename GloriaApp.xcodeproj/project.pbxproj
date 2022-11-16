@@ -38,6 +38,7 @@
 		DB8B2C7F2924EB6E00F94D14 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */; };
 		DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */; };
 		DB8B2C832924EDA200F94D14 /* GTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C822924EDA200F94D14 /* GTextField.swift */; };
+		DB8B2C862924FA2B00F94D14 /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
@@ -84,6 +85,7 @@
 		DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinalCheckVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 		DB8B2C822924EDA200F94D14 /* GTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextField.swift; sourceTree = "<group>"; };
+		DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVariables.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		DB5EDE43291FA4A900AE0386 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				DB8B2C842924FA1400F94D14 /* Static Variables */,
 				DB5EDE44291FA4B100AE0386 /* Extensions */,
 				DB5EDE46291FA4C000AE0386 /* Fonts */,
 				DB95F3E829213C8E00D4F561 /* UI Elements */,
@@ -265,6 +268,14 @@
 				DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */,
 			);
 			path = "Home View Controller Delegates";
+			sourceTree = "<group>";
+		};
+		DB8B2C842924FA1400F94D14 /* Static Variables */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */,
+			);
+			path = "Static Variables";
 			sourceTree = "<group>";
 		};
 		DB95F3E1292133CA00D4F561 /* Home */ = {
@@ -555,6 +566,7 @@
 				DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */,
 				DB2D2AB2292211780097B8D9 /* EmptyTicketTableViewCell.swift in Sources */,
 				DBECCC252922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift in Sources */,
+				DB8B2C862924FA2B00F94D14 /* StaticVariables.swift in Sources */,
 				DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */,
 				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,

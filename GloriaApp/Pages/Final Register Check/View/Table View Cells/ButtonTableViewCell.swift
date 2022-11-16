@@ -32,7 +32,7 @@ class ButtonTableViewCell: UITableViewCell {
         button.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
             make.top.equalTo(contentView.snp.top).offset(28)
-            make.bottom.equalTo(contentView.snp.bottom).offset(-20)
+            make.bottom.equalTo(contentView.snp.bottom).offset(StaticVariables.bottomPadding())
         }
     }
 }

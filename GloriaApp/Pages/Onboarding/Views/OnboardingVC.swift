@@ -77,7 +77,7 @@ class OnboardingVC: UIViewController {
         view.addSubview(button)
         button.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-20)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(StaticVariables.bottomPadding())
         }
     }
 }

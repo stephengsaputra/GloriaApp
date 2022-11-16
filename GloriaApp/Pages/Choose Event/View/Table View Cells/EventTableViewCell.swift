@@ -59,7 +59,7 @@ class EventTableViewCell: UITableViewCell {
         stack.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
             make.top.equalTo(contentView.snp.top).offset(0)
-            make.bottom.equalTo(contentView.snp.bottom).offset(-100)
+            make.bottom.equalTo(contentView.snp.bottom).offset(StaticVariables.bottomPadding() - 65)
         }
         
         configureTicketButton()
