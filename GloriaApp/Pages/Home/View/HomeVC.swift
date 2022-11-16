@@ -16,7 +16,7 @@ class HomeVC: UIViewController {
         let table = UITableView()
         
         table.register(VOTDTableViewCell.self, forCellReuseIdentifier: VOTDTableViewCell.identifier)
-        table.register(TicketTableViewCell.self, forCellReuseIdentifier: TicketTableViewCell.identifier)
+        table.register(EmptyTicketTableViewCell.self, forCellReuseIdentifier: EmptyTicketTableViewCell.identifier)
         table.register(HomeButtonTableViewCell.self, forCellReuseIdentifier: HomeButtonTableViewCell.identifier)
         
         table.delegate = self
@@ -43,6 +43,22 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         configureUI()
         configureNavigation()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        profileButton.alpha = 1
+        configureNavigation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        profileButton.alpha = 0
+        UIApplication.shared.setStatusBarStyle(.default, animated: true)
     }
     
     // MARK: - Selectors
@@ -77,7 +93,7 @@ class HomeVC: UIViewController {
         
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         
-        navigationController?.navigationBar.tintColor = UIColor.primaryColor
+        navigationController?.navigationBar.tintColor = UIColor.secondaryButtonColor
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal

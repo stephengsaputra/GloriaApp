@@ -26,8 +26,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         if indexPath.row == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: TicketTableViewCell.identifier) as! TicketTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTicketTableViewCell.identifier) as! EmptyTicketTableViewCell
             cell.configureUI()
+            cell.delegate = self
             
             cell.backgroundColor = .clear
             cell.selectionStyle = .none

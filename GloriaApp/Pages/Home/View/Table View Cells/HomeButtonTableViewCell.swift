@@ -13,9 +13,9 @@ class HomeButtonTableViewCell: UITableViewCell {
     static let identifier = "HomeButtonTableViewCell"
     
     // MARK: - Properties
-    let button1 = ReusableHomePageButton(type: .cutToCut, selector: #selector(handleButton), target: self)
-    let button2 = ReusableHomePageButton(type: .churchEvents, selector: #selector(handleButton), target: self)
-    let button3 = ReusableHomePageButton(type: .lectioDivina, selector: #selector(handleButton), target: self)
+    let button1 = ReusableHomePageButton(type: .cutToCut, selector: #selector(handleButton), target: ReusableHomePageButton.self)
+    let button2 = ReusableHomePageButton(type: .churchEvents, selector: #selector(handleButton), target: ReusableHomePageButton.self)
+    let button3 = ReusableHomePageButton(type: .lectioDivina, selector: #selector(handleButton), target: ReusableHomePageButton.self)
     
     // MARK: - Selectors
     @objc func handleButton() {
@@ -35,7 +35,7 @@ class HomeButtonTableViewCell: UITableViewCell {
         stack.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
             make.top.equalTo(contentView.snp.top)
-            make.bottom.equalTo(contentView.snp.bottom).offset(-28)
+            make.bottom.equalTo(contentView.snp.bottom).offset(StaticVariables.bottomPadding())
         }
     }
 }

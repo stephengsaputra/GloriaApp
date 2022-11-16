@@ -1,5 +1,5 @@
 //
-//  TicketTableViewCell.swift
+//  ChosenEventTableViewCell.swift
 //  GloriaApp
 //
 //  Created by Stephen Giovanni Saputra on 16/11/22.
@@ -8,25 +8,25 @@
 import UIKit
 import SnapKit
 
-class TicketTableViewCell: UITableViewCell {
+class ChosenEventTableViewCell: UITableViewCell {
 
-    static let identifier = "TicketTableViewCell"
+    static let identifier = "ChosenEventTableViewCell"
     
     // MARK: - Properties
-    internal lazy var upcomingEventLabel: GLabel = {
-        let label = GLabel(style: .heading1, textString: "Upcoming Event")
+    internal lazy var headingLabel: GLabel = {
+        let label = GLabel(style: .heading1, textString: "Ibadah yang ingin diikuti")
         return label
     }()
     
-    let ticketView = TicketView()
+    let ticketView = ReusableEventView()
     
     // MARK: - Helpers
     func configureUI() {
         
         contentView.backgroundColor = .clear
         
-        contentView.addSubview(upcomingEventLabel)
-        upcomingEventLabel.snp.makeConstraints { make in
+        contentView.addSubview(headingLabel)
+        headingLabel.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
             make.top.equalTo(contentView.snp.top)
         }
@@ -34,7 +34,7 @@ class TicketTableViewCell: UITableViewCell {
         contentView.addSubview(ticketView)
         ticketView.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
-            make.top.equalTo(upcomingEventLabel.snp.bottom).offset(6 )
+            make.top.equalTo(headingLabel.snp.bottom).offset(6 )
             make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
     }

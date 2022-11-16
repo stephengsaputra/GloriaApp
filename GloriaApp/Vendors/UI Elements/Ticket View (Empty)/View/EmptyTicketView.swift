@@ -36,6 +36,8 @@ class EmptyTicketView: UIView {
         return label
     }()
     
+    var delegate: EmptyTicketCellDelegate?
+    
     //MARK: - Lifecycle
     required init() {
         
@@ -51,7 +53,7 @@ class EmptyTicketView: UIView {
 
     // MARK: - Selectors
     @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
-        print("DEBUG: Hello, world!")
+        self.delegate?.triggerNavigation()
     }
     
     // MARK: - Helpers

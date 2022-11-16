@@ -92,7 +92,6 @@ class GButton: UIButton {
             delay: 0,
             options: [.allowUserInteraction, .curveEaseInOut]) {
                 self.transform = .init(scaleX: 0.99, y: 0.99)
-                self.alpha = 0.9
             }
     }
     
@@ -105,7 +104,6 @@ class GButton: UIButton {
             delay: 0,
             options: [.allowUserInteraction, .curveEaseOut]) {
                 self.transform = .identity
-                self.alpha = 1
             }
     }
     

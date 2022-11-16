@@ -11,7 +11,7 @@
 		DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */; };
 		DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */; };
 		DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */; };
-		DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */; };
+		DB2D2AB2292211780097B8D9 /* EmptyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB1292211780097B8D9 /* EmptyTicketTableViewCell.swift */; };
 		DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */; };
 		DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C72291F9985003ADAB9 /* AppDelegate.swift */; };
 		DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB393C74291F9985003ADAB9 /* SceneDelegate.swift */; };
@@ -29,12 +29,28 @@
 		DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */; };
 		DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE53291FA54C00AE0386 /* GButton.swift */; };
 		DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5EDE55291FA55900AE0386 /* GLabel.swift */; };
+		DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */; };
+		DB70DF4F29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */; };
+		DB70DF5129247E710018E2FC /* ChosenEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */; };
+		DB70DF53292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */; };
+		DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */; };
+		DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */; };
+		DB8B2C7F2924EB6E00F94D14 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */; };
+		DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */; };
+		DB8B2C832924EDA200F94D14 /* GTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C822924EDA200F94D14 /* GTextField.swift */; };
+		DB8B2C862924FA2B00F94D14 /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
 		DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */; };
 		DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F329214B2000D4F561 /* TicketView.swift */; };
 		DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */; };
+		DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DB965C922922A1EF00AE86BC /* SkeletonView */; };
+		DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */; };
+		DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */; };
+		DBECCC252922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC242922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift */; };
+		DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */; };
+		DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +58,7 @@
 		DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 		DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOTDTableViewCell.swift; sourceTree = "<group>"; };
 		DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBG.swift; sourceTree = "<group>"; };
-		DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		DB2D2AB1292211780097B8D9 /* EmptyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
 		DB393C6F291F9985003ADAB9 /* GloriaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GloriaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB393C72291F9985003ADAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +76,27 @@
 		DB5EDE51291FA53400AE0386 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		DB5EDE53291FA54C00AE0386 /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
 		DB5EDE55291FA55900AE0386 /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
+		DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckVC.swift; sourceTree = "<group>"; };
+		DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenEventTableViewCell.swift; sourceTree = "<group>"; };
+		DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDiriPengunjungTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCDelegate.swift; sourceTree = "<group>"; };
+		DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinalCheckVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
+		DB8B2C822924EDA200F94D14 /* GTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextField.swift; sourceTree = "<group>"; };
+		DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVariables.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
 		DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTicketView.swift; sourceTree = "<group>"; };
 		DB95F3F329214B2000D4F561 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHomePageButton.swift; sourceTree = "<group>"; };
+		DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableEventView.swift; sourceTree = "<group>"; };
+		DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventVC.swift; sourceTree = "<group>"; };
+		DBECCC242922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseEventVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5EDE3A291FA44200AE0386 /* SnapKit in Frameworks */,
+				DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */,
 				DB5EDE3D291FA45000AE0386 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,8 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				DB2D2AAD2921F8DB0097B8D9 /* VOTDTableViewCell.swift */,
-				DB2D2AB1292211780097B8D9 /* TicketTableViewCell.swift */,
+				DB2D2AB1292211780097B8D9 /* EmptyTicketTableViewCell.swift */,
 				DB2D2AB3292215270097B8D9 /* HomeButtonTableViewCell.swift */,
+				DB8B2C7C2924E8D200F94D14 /* TicketTableViewCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -136,7 +169,8 @@
 			children = (
 				DB5EDE3F291FA47E00AE0386 /* Onboarding */,
 				DB95F3E1292133CA00D4F561 /* Home */,
-				DB95F3E829213C8E00D4F561 /* UI Elements */,
+				DBECCC1B2922BF0500CCEA63 /* Choose Event */,
+				DBECCC1E2922BF3F00CCEA63 /* Final Register Check */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -175,8 +209,10 @@
 		DB5EDE43291FA4A900AE0386 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				DB8B2C842924FA1400F94D14 /* Static Variables */,
 				DB5EDE44291FA4B100AE0386 /* Extensions */,
 				DB5EDE46291FA4C000AE0386 /* Fonts */,
+				DB95F3E829213C8E00D4F561 /* UI Elements */,
 				DB5EDE45291FA4B900AE0386 /* UI Components */,
 			);
 			path = Vendors;
@@ -197,6 +233,7 @@
 			children = (
 				DB5EDE53291FA54C00AE0386 /* GButton.swift */,
 				DB5EDE55291FA55900AE0386 /* GLabel.swift */,
+				DB8B2C822924EDA200F94D14 /* GTextField.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -210,6 +247,35 @@
 				DB5EDE4A291FA4EE00AE0386 /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB70DF4D29247C530018E2FC /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DB70DF4E29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift */,
+				DB70DF5029247E710018E2FC /* ChosenEventTableViewCell.swift */,
+				DB70DF52292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift */,
+				DB8B2C7E2924EB6E00F94D14 /* ButtonTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		DB8B2C7B2924E81300F94D14 /* Home View Controller Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B2C792924E7DE00F94D14 /* HomeVCDelegate.swift */,
+				DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */,
+				DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */,
+			);
+			path = "Home View Controller Delegates";
+			sourceTree = "<group>";
+		};
+		DB8B2C842924FA1400F94D14 /* Static Variables */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */,
+			);
+			path = "Static Variables";
 			sourceTree = "<group>";
 		};
 		DB95F3E1292133CA00D4F561 /* Home */ = {
@@ -226,8 +292,7 @@
 			children = (
 				DB2D2AAF2921FE210097B8D9 /* HomeBG.swift */,
 				DB95F3E4292133F200D4F561 /* HomeVC.swift */,
-				DB0917BF292219EF00B405B1 /* HomeVC + TableViewDelegate.swift */,
-				DB0917BD292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift */,
+				DB8B2C7B2924E81300F94D14 /* Home View Controller Delegates */,
 				DB0917BC2922196900B405B1 /* Table View Cells */,
 			);
 			path = View;
@@ -243,6 +308,7 @@
 		DB95F3E829213C8E00D4F561 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				DBECCC172922BE0500CCEA63 /* Event View */,
 				DB95F3F529214B5100D4F561 /* HomePageButton */,
 				DB95F3F129214AF900D4F561 /* Ticket View */,
 				DB95F3ED2921471800D4F561 /* Ticket View (Empty) */,
@@ -315,6 +381,83 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DBECCC172922BE0500CCEA63 /* Event View */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC182922BE2400CCEA63 /* View */,
+			);
+			path = "Event View";
+			sourceTree = "<group>";
+		};
+		DBECCC182922BE2400CCEA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC1B2922BF0500CCEA63 /* Choose Event */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC1D2922BF3000CCEA63 /* View Model */,
+				DBECCC1C2922BF2A00CCEA63 /* View */,
+			);
+			path = "Choose Event";
+			sourceTree = "<group>";
+		};
+		DBECCC1C2922BF2A00CCEA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */,
+				DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */,
+				DBECCC232922C1AB00CCEA63 /* Table View Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC1D2922BF3000CCEA63 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DBECCC1E2922BF3F00CCEA63 /* Final Register Check */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC202922BF6D00CCEA63 /* View Model */,
+				DBECCC1F2922BF6800CCEA63 /* View */,
+			);
+			path = "Final Register Check";
+			sourceTree = "<group>";
+		};
+		DBECCC1F2922BF6800CCEA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */,
+				DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */,
+				DB70DF4D29247C530018E2FC /* Table View Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBECCC202922BF6D00CCEA63 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DBECCC232922C1AB00CCEA63 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC242922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift */,
+				DBECCC262922C31000CCEA63 /* EventTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +477,7 @@
 			packageProductDependencies = (
 				DB5EDE39291FA44200AE0386 /* SnapKit */,
 				DB5EDE3C291FA45000AE0386 /* IQKeyboardManagerSwift */,
+				DB965C922922A1EF00AE86BC /* SkeletonView */,
 			);
 			productName = GloriaApp;
 			productReference = DB393C6F291F9985003ADAB9 /* GloriaApp.app */;
@@ -366,6 +510,7 @@
 			packageReferences = (
 				DB5EDE38291FA44200AE0386 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DB965C912922A1EF00AE86BC /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = DB393C70291F9985003ADAB9 /* Products */;
 			projectDirPath = "";
@@ -398,24 +543,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8B2C7F2924EB6E00F94D14 /* ButtonTableViewCell.swift in Sources */,
+				DB70DF4F29247CAA0018E2FC /* FinalCheckHeaderTableViewCell.swift in Sources */,
+				DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */,
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
 				DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */,
+				DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */,
 				DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */,
+				DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
+				DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */,
+				DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */,
 				DB393C75291F9985003ADAB9 /* SceneDelegate.swift in Sources */,
 				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
 				DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */,
 				DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */,
+				DB70DF5129247E710018E2FC /* ChosenEventTableViewCell.swift in Sources */,
 				DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */,
 				DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */,
 				DB95F3F02921475500D4F561 /* EmptyTicketView.swift in Sources */,
 				DB2D2AAE2921F8DB0097B8D9 /* VOTDTableViewCell.swift in Sources */,
-				DB2D2AB2292211780097B8D9 /* TicketTableViewCell.swift in Sources */,
+				DB2D2AB2292211780097B8D9 /* EmptyTicketTableViewCell.swift in Sources */,
+				DBECCC252922C1E900CCEA63 /* ChooseEventHeaderTableViewCell.swift in Sources */,
+				DB8B2C862924FA2B00F94D14 /* StaticVariables.swift in Sources */,
+				DB70DF4C29247A090018E2FC /* FinalCheckVC.swift in Sources */,
 				DB2D2AB02921FE210097B8D9 /* HomeBG.swift in Sources */,
 				DB5EDE48291FA4D100AE0386 /* UIColorExtensions.swift in Sources */,
 				DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */,
+				DB8B2C832924EDA200F94D14 /* GTextField.swift in Sources */,
 				DB0917BE292219C300B405B1 /* HomeVC + ScrollViewDelegate.swift in Sources */,
+				DBECCC2B2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift in Sources */,
+				DB8B2C7D2924E8D200F94D14 /* TicketTableViewCell.swift in Sources */,
+				DB70DF53292481FD0018E2FC /* DataDiriPengunjungTableViewCell.swift in Sources */,
 				DB5EDE54291FA54C00AE0386 /* GButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +822,14 @@
 				kind = branch;
 			};
 		};
+		DB965C912922A1EF00AE86BC /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -674,6 +842,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB5EDE3B291FA45000AE0386 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		DB965C922922A1EF00AE86BC /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB965C912922A1EF00AE86BC /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
