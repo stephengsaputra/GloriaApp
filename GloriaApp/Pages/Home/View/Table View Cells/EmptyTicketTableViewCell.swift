@@ -8,10 +8,6 @@
 import UIKit
 import SnapKit
 
-protocol EmptyTicketCellDelegate: AnyObject {
-    func triggerNavigation()
-}
-
 class EmptyTicketTableViewCell: UITableViewCell {
 
     static let identifier = "EmptyTicketTableViewCell"
@@ -25,6 +21,11 @@ class EmptyTicketTableViewCell: UITableViewCell {
     let ticketView = EmptyTicketView()
     var delegate: HomeVCDelegate?
     
+    // MARK: - Selectors
+    @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
+        self.delegate?.navigateToChooseEvent()
+    }
+    
     // MARK: - Helpers
     func configureUI() {
         
@@ -36,19 +37,14 @@ class EmptyTicketTableViewCell: UITableViewCell {
             make.top.equalTo(contentView.snp.top)
         }
         
-        ticketView.delegate = self
         contentView.addSubview(ticketView)
         ticketView.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
-            make.top.equalTo(upcomingEventLabel.snp.bottom).offset(6 )
+            make.top.equalTo(upcomingEventLabel.snp.bottom).offset(6)
             make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
-    }
-}
-
-extension EmptyTicketTableViewCell: EmptyTicketCellDelegate {
-    
-    func triggerNavigation() {
-        self.delegate?.navigateToChooseEvent()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
+        ticketView.addGestureRecognizer(tapGesture)
     }
 }

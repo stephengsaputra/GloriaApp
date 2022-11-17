@@ -27,6 +27,11 @@ extension FinalCheckVC: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: ChosenEventTableViewCell.identifier) as! ChosenEventTableViewCell
+            
+            cell.eventName = self.eventName
+            cell.eventType = self.eventType
+            cell.eventLocation = self.eventLocation
+            cell.eventDateTime = self.eventDateTime
             cell.configureUI()
             
             cell.backgroundColor = .clear

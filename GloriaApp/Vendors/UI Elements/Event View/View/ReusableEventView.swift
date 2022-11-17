@@ -8,39 +8,21 @@
 import UIKit
 import SnapKit
 
-class ReusableEventView: UIControl {
+class ReusableEventView: UIView {
 
     // MARK: - Properties
-    internal lazy var eventNameLabel: GLabel = {
-        let label = GLabel(style: .heading2, textString: "Kebaktian Umum 2")
-        return label
-    }()
-    
-    internal lazy var eventTypeLabel: GLabel = {
-        let label = GLabel(style: .bodyText, textString: "Umum")
-        return label
-    }()
-    
-    internal lazy var eventLocationLabel: GLabel = {
-        let label = GLabel(style: .bodyText, textString: "GKA Gloria Pacar")
-        label.textColor = .secondaryTextColor
-        return label
-    }()
-    
-    internal lazy var eventDateLabel: GLabel = {
-        let label = GLabel(style: .bodyText, textString: "Minggu, 2 Januari 2022")
-        label.textColor = .secondaryTextColor
-        return label
-    }()
-    
-    internal lazy var eventTimeLabel: GLabel = {
-        let label = GLabel(style: .bodyText, textString: "09.00")
-        label.textColor = .secondaryTextColor
-        return label
-    }()
+    var eventName: String
+    var eventType: String
+    var eventLocation: String
+    var eventDateTime: Date
     
     //MARK: - Lifecycle
-    required init() {
+    required init(eventName: String, eventType: String, eventLocation: String, eventDateTime: Date) {
+        
+        self.eventName = eventName
+        self.eventType = eventType
+        self.eventLocation = eventLocation
+        self.eventDateTime = eventDateTime
         
         super.init(frame: .zero)
         
@@ -61,10 +43,20 @@ class ReusableEventView: UIControl {
         self.backgroundColor = .contentBG
         self.addDressing(useShadow: true, useCornerRadius: true, useBorder: true)
         
+        let eventNameLabel = GLabel(style: .heading2, textString: eventName)
+        let eventTypeLabel = GLabel(style: .bodyText, textString: eventType)
+        
         let eventLabelStack = UIStackView(arrangedSubviews: [eventNameLabel, eventTypeLabel])
         eventLabelStack.alignment = .leading
         eventLabelStack.axis = .vertical
         eventLabelStack.spacing = 5
+        
+        let eventLocationLabel = GLabel(style: .bodyText, textString: eventLocation)
+        eventLocationLabel.textColor = .secondaryTextColor
+        let eventDateLabel = GLabel(style: .bodyText, textString: Event.dateFormatter(date: eventDateTime))
+        eventDateLabel.textColor = .secondaryTextColor
+        let eventTimeLabel = GLabel(style: .bodyText, textString: Event.timeFormatter(date: eventDateTime))
+        eventTimeLabel.textColor = .secondaryTextColor
         
         let eventDetailStack = UIStackView(arrangedSubviews: [eventLocationLabel, eventDateLabel, eventTimeLabel])
         eventDetailStack.alignment = .leading

@@ -12,13 +12,16 @@ class ChosenEventTableViewCell: UITableViewCell {
 
     static let identifier = "ChosenEventTableViewCell"
     
+    var eventName: String = ""
+    var eventType: String = ""
+    var eventLocation: String = ""
+    var eventDateTime: Date = Date()
+    
     // MARK: - Properties
     internal lazy var headingLabel: GLabel = {
         let label = GLabel(style: .heading1, textString: "Ibadah yang ingin diikuti")
         return label
     }()
-    
-    let ticketView = ReusableEventView()
     
     // MARK: - Helpers
     func configureUI() {
@@ -31,6 +34,7 @@ class ChosenEventTableViewCell: UITableViewCell {
             make.top.equalTo(contentView.snp.top)
         }
         
+        let ticketView = ReusableEventView(eventName: eventName, eventType: eventType, eventLocation: eventLocation, eventDateTime: eventDateTime)
         contentView.addSubview(ticketView)
         ticketView.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)

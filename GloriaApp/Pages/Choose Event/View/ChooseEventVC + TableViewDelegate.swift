@@ -26,6 +26,8 @@ extension ChooseEventVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier) as! EventTableViewCell
+        
+        cell.data = data
         cell.configureUI()
         cell.delegate = self
         

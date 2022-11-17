@@ -9,7 +9,8 @@ import UIKit
 import SnapKit
 
 protocol ChooseEventDelegate: AnyObject {
-    func showButton()
+    
+    func showButton(eventName: String, eventType: String, eventLocation: String, eventDateTime: Date)
 }
 
 class ChooseEventVC: UIViewController {
@@ -38,6 +39,13 @@ class ChooseEventVC: UIViewController {
         return button
     }()
     
+    internal let data = Event.data
+    
+    internal var eventName = ""
+    internal var eventType = ""
+    internal var eventLocation = ""
+    internal var eventDateTime = Date()
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         
@@ -48,7 +56,11 @@ class ChooseEventVC: UIViewController {
     
     // MARK: - Selectors
     @objc func handleButton() {
-        navigationController?.pushViewController(FinalCheckVC(), animated: true)
+        navigationController?.pushViewController(FinalCheckVC(
+            eventName: self.eventName,
+            eventType: self.eventType,
+            eventLocation: self.eventLocation,
+            eventDateTime: self.eventDateTime), animated: true)
     }
     
     // MARK: - Helpers
@@ -94,9 +106,14 @@ class ChooseEventVC: UIViewController {
 
 extension ChooseEventVC: ChooseEventDelegate {
     
-    func showButton() {
+    func showButton(eventName: String, eventType: String, eventLocation: String, eventDateTime: Date) {
         UIView.animate(withDuration: 0.2) {
             self.button.alpha = 1.0
         }
+        
+        self.eventName = eventName
+        self.eventType = eventType
+        self.eventLocation = eventLocation
+        self.eventDateTime = eventDateTime
     }
 }

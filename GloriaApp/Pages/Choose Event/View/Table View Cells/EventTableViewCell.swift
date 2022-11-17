@@ -13,16 +13,7 @@ class EventTableViewCell: UITableViewCell {
     static let identifier = "EventTableViewCell"
     
     // MARK: - Properties
-    let eventView1 = ReusableEventView()
-    let eventView2 = ReusableEventView()
-    let eventView3 = ReusableEventView()
-    let eventView4 = ReusableEventView()
-    let eventView5 = ReusableEventView()
-    let eventView6 = ReusableEventView()
-    let eventView7 = ReusableEventView()
-    let eventView8 = ReusableEventView()
-    let eventView9 = ReusableEventView()
-    let eventView10 = ReusableEventView()
+    var data: [Event] = []
     
     weak var selectedView: ReusableEventView? { willSet {
         
@@ -38,22 +29,30 @@ class EventTableViewCell: UITableViewCell {
         }
     }
     
+    internal lazy var stack: UIStackView = {
+        let stack = UIStackView()
+        stack.spacing = 6
+        stack.axis = .vertical
+        return stack
+    }()
+    
     var delegate: ChooseEventDelegate?
     
     // MARK: - Selectors
     @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
         selectedView = sender.view as? ReusableEventView
-        delegate?.showButton()
+        delegate?.showButton(
+            eventName: selectedView?.eventName ?? "",
+            eventType: selectedView?.eventType ?? "",
+            eventLocation: selectedView?.eventLocation ?? "",
+            eventDateTime: selectedView?.eventDateTime ?? Date()
+        )
     }
     
     // MARK: - Helpers
     func configureUI() {
         
         contentView.backgroundColor = .clear
-        
-        let stack = UIStackView(arrangedSubviews: [eventView1, eventView2, eventView3, eventView4, eventView5, eventView6, eventView7, eventView8, eventView9, eventView10])
-        stack.spacing = 6
-        stack.axis = .vertical
         
         contentView.addSubview(stack)
         stack.snp.makeConstraints { make in
@@ -66,12 +65,27 @@ class EventTableViewCell: UITableViewCell {
     }
     
     func configureTicketButton() {
-        
-        let views = [eventView1, eventView2, eventView3, eventView4, eventView5, eventView6, eventView7, eventView8, eventView9, eventView10]
-        
+
+        let views = generateTicket()
+
         views.forEach {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
             $0.addGestureRecognizer(tapGesture)
+            
+            stack.addArrangedSubview($0)
         }
+    }
+    
+    func generateTicket() -> [ReusableEventView] {
+        
+        var views: [ReusableEventView] = []
+        
+        for i in 0..<data.count {
+            
+            let event = ReusableEventView(eventName: data[i].eventName, eventType: data[i].eventType, eventLocation: data[i].eventLocation, eventDateTime: data[i].eventDateTime)
+            views.append(event)
+        }
+        
+        return views
     }
 }

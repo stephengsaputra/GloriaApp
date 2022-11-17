@@ -36,8 +36,6 @@ class EmptyTicketView: UIView {
         return label
     }()
     
-    var delegate: EmptyTicketCellDelegate?
-    
     //MARK: - Lifecycle
     required init() {
         
@@ -49,11 +47,6 @@ class EmptyTicketView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    // MARK: - Selectors
-    @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
-        self.delegate?.triggerNavigation()
     }
     
     // MARK: - Helpers
@@ -73,9 +66,6 @@ class EmptyTicketView: UIView {
             make.leading.trailing.equalToSuperview().inset(30)
             make.bottom.equalTo(self.snp.bottom).offset(-30)
         }
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
-        self.addGestureRecognizer(tapGesture)
     }
     
     private func updateColors() {
