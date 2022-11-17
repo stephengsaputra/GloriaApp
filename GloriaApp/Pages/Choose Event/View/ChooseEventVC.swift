@@ -85,10 +85,6 @@ class ChooseEventVC: UIViewController {
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.backgroundColor = .backgroundColor
-        navBarAppearance.largeTitleTextAttributes = [
-            .foregroundColor: UIColor.white,
-            .font: UIFont.largeTitle1()
-        ]
         navBarAppearance.titleTextAttributes = [
             .foregroundColor: UIColor.textColor ?? UIColor.label,
             .font: UIFont.heading2()
@@ -98,8 +94,7 @@ class ChooseEventVC: UIViewController {
         
         navigationController?.navigationBar.tintColor = UIColor.secondaryButtonColor
         navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.navigationItem.largeTitleDisplayMode = .never
+        navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
     }
 }
