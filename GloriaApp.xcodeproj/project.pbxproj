@@ -47,6 +47,7 @@
 		DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F329214B2000D4F561 /* TicketView.swift */; };
 		DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */; };
 		DB965C932922A1EF00AE86BC /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DB965C922922A1EF00AE86BC /* SkeletonView */; };
+		DBADA356292677C0009553CE /* ChooseEventVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBADA355292677C0009553CE /* ChooseEventVCDelegate.swift */; };
 		DBB6FD9029253B030088F7B1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6FD8F29253B030088F7B1 /* Event.swift */; };
 		DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */; };
 		DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */; };
@@ -94,6 +95,7 @@
 		DB95F3EF2921475500D4F561 /* EmptyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTicketView.swift; sourceTree = "<group>"; };
 		DB95F3F329214B2000D4F561 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		DB95F3F729214D1600D4F561 /* ReusableHomePageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHomePageButton.swift; sourceTree = "<group>"; };
+		DBADA355292677C0009553CE /* ChooseEventVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventVCDelegate.swift; sourceTree = "<group>"; };
 		DBB6FD8F29253B030088F7B1 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DBECCC192922BE3C00CCEA63 /* ReusableEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableEventView.swift; sourceTree = "<group>"; };
 		DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseEventVC.swift; sourceTree = "<group>"; };
@@ -386,6 +388,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DBADA3542926779C009553CE /* Choose Event View Controller Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DBADA355292677C0009553CE /* ChooseEventVCDelegate.swift */,
+				DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */,
+			);
+			path = "Choose Event View Controller Delegates";
+			sourceTree = "<group>";
+		};
 		DBECCC172922BE0500CCEA63 /* Event View */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,7 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				DBECCC212922BF8100CCEA63 /* ChooseEventVC.swift */,
-				DBECCC2A2922C62F00CCEA63 /* ChooseEventVC + TableViewDelegate.swift */,
+				DBADA3542926779C009553CE /* Choose Event View Controller Delegates */,
 				DBECCC232922C1AB00CCEA63 /* Table View Cells */,
 			);
 			path = View;
@@ -559,6 +570,7 @@
 				DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */,
 				DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */,
 				DB393C73291F9985003ADAB9 /* AppDelegate.swift in Sources */,
+				DBADA356292677C0009553CE /* ChooseEventVCDelegate.swift in Sources */,
 				DB5EDE52291FA53400AE0386 /* UIFontExtensions.swift in Sources */,
 				DB8B2C7A2924E7DE00F94D14 /* HomeVCDelegate.swift in Sources */,
 				DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */,

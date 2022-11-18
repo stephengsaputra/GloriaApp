@@ -13,6 +13,6 @@ struct StaticVariables {
     static func bottomPadding() -> Int {
         
         let notch: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
-        return notch > 20 ? 0 : -20
+        return notch > 20 ? -10 : -20
     }
 }

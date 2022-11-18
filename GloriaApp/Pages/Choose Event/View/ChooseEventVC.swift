@@ -8,11 +8,6 @@
 import UIKit
 import SnapKit
 
-protocol ChooseEventDelegate: AnyObject {
-    
-    func showButton(eventName: String, eventType: String, eventLocation: String, eventDateTime: Date)
-}
-
 class ChooseEventVC: UIViewController {
 
     // MARK: - Properties
@@ -96,19 +91,5 @@ class ChooseEventVC: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         navigationItem.largeTitleDisplayMode = .never
         navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
-    }
-}
-
-extension ChooseEventVC: ChooseEventDelegate {
-    
-    func showButton(eventName: String, eventType: String, eventLocation: String, eventDateTime: Date) {
-        UIView.animate(withDuration: 0.2) {
-            self.button.alpha = 1.0
-        }
-        
-        self.eventName = eventName
-        self.eventType = eventType
-        self.eventLocation = eventLocation
-        self.eventDateTime = eventDateTime
     }
 }

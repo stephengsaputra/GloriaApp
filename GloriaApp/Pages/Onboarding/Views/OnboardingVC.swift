@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import UIWindowTransitions
 
 class OnboardingVC: UIViewController {
     
@@ -49,6 +50,19 @@ class OnboardingVC: UIViewController {
         vc.modalTransitionStyle = .coverVertical
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
+        
+//        let wnd = UIApplication
+//            .shared
+//            .connectedScenes
+//            .compactMap { $0 as? UIWindowScene }
+//            .flatMap { $0.windows }
+//            .first { $0.isKeyWindow }
+//
+//        let options = UIWindow.TransitionOptions()
+//        options.direction = .toTop
+//        options.duration = 0.4
+//        options.style = .linear
+//        wnd?.set(rootViewController: UINavigationController(rootViewController: HomeVC()), options: options)
     }
     
     // MARK: - Helpers

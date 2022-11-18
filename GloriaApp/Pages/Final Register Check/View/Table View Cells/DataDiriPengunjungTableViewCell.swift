@@ -13,6 +13,11 @@ class DataDiriPengunjungTableViewCell: UITableViewCell {
     // MARK: - Properties
     static let identifier = "DataDiriPengunjungTableViewCell"
     
+    internal lazy var headingLabel: GLabel = {
+        let label = GLabel(style: .heading1, textString: "Data diri pengunjung")
+        return label
+    }()
+    
     let nameTF = DataDiriStack(title: "Nama", tfContent: "Esgeee")
     let dobTF = DataDiriStack(title: "Tanggal Lahir", tfContent: "13 Maret 2001")
     let emailTF = DataDiriStack(title: "Alamat Email", tfContent: "e@gmail.com")
@@ -24,6 +29,12 @@ class DataDiriPengunjungTableViewCell: UITableViewCell {
         
         contentView.backgroundColor = .clear
         
+        contentView.addSubview(headingLabel)
+        headingLabel.snp.makeConstraints { make in
+            make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
+            make.top.equalTo(contentView.snp.top)
+        }
+        
         let stack = UIStackView(arrangedSubviews: [nameTF, dobTF, emailTF, addressTF, phoneTF])
         stack.spacing = 10
         stack.axis = .vertical
@@ -32,7 +43,7 @@ class DataDiriPengunjungTableViewCell: UITableViewCell {
         contentView.addSubview(stack)
         stack.snp.makeConstraints { make in
             make.horizontalEdges.equalTo(contentView.snp.horizontalEdges).inset(20)
-            make.top.equalTo(contentView.snp.top)
+            make.top.equalTo(headingLabel.snp.bottom).offset(6)
             make.bottom.equalTo(contentView.snp.bottom).offset(-28)
         }
     }
@@ -75,7 +86,7 @@ class DataDiriStack: UIView {
         
         self.addSubview(tf)
         tf.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(2)
+            make.top.equalTo(titleLabel.snp.bottom).offset(4)
             make.horizontalEdges.equalToSuperview()
             make.bottom.equalToSuperview()
         }

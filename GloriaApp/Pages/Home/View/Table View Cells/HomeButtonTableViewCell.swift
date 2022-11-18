@@ -13,9 +13,9 @@ class HomeButtonTableViewCell: UITableViewCell {
     static let identifier = "HomeButtonTableViewCell"
     
     // MARK: - Properties
-    let button1 = ReusableHomePageButton(type: .cutToCut, selector: #selector(handleButton), target: ReusableHomePageButton.self)
-    let button2 = ReusableHomePageButton(type: .churchEvents, selector: #selector(handleButton), target: ReusableHomePageButton.self)
-    let button3 = ReusableHomePageButton(type: .lectioDivina, selector: #selector(handleButton), target: ReusableHomePageButton.self)
+    let button1 = ReusableHomePageButton(type: .cutToCut, selector: #selector(handleButton), target: self)
+    let button2 = ReusableHomePageButton(type: .churchEvents, selector: #selector(handleButton), target: self)
+    let button3 = ReusableHomePageButton(type: .lectioDivina, selector: #selector(handleButton), target: self)
     
     // MARK: - Selectors
     @objc func handleButton() {
