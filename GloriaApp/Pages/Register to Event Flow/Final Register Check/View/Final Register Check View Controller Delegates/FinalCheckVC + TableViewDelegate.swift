@@ -52,6 +52,7 @@ extension FinalCheckVC: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: ButtonTableViewCell.identifier) as! ButtonTableViewCell
         cell.configureUI()
+        cell.delegate = self
         
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
