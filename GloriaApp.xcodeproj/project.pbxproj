@@ -40,6 +40,9 @@
 		DB8B2C812924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */; };
 		DB8B2C832924EDA200F94D14 /* GTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C822924EDA200F94D14 /* GTextField.swift */; };
 		DB8B2C862924FA2B00F94D14 /* StaticVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */; };
+		DB94279D2928C74B00FEA2FA /* TCRegisterAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94279C2928C74B00FEA2FA /* TCRegisterAlertVC.swift */; };
+		DB9427A02928CA3100FEA2FA /* FinalCheckVCDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94279F2928CA3100FEA2FA /* FinalCheckVCDelegates.swift */; };
+		DB9427A62928D92D00FEA2FA /* OutputRegisterEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9427A52928D92D00FEA2FA /* OutputRegisterEventVC.swift */; };
 		DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E4292133F200D4F561 /* HomeVC.swift */; };
 		DB95F3E7292137D300D4F561 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */; };
 		DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */; };
@@ -89,6 +92,9 @@
 		DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinalCheckVC + TableViewDelegate.swift"; sourceTree = "<group>"; };
 		DB8B2C822924EDA200F94D14 /* GTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextField.swift; sourceTree = "<group>"; };
 		DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticVariables.swift; sourceTree = "<group>"; };
+		DB94279C2928C74B00FEA2FA /* TCRegisterAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRegisterAlertVC.swift; sourceTree = "<group>"; };
+		DB94279F2928CA3100FEA2FA /* FinalCheckVCDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCheckVCDelegates.swift; sourceTree = "<group>"; };
+		DB9427A52928D92D00FEA2FA /* OutputRegisterEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputRegisterEventVC.swift; sourceTree = "<group>"; };
 		DB95F3E4292133F200D4F561 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DB95F3E6292137D300D4F561 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		DB95F3EB29213CCE00D4F561 /* VerseOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseOfTheDayView.swift; sourceTree = "<group>"; };
@@ -175,8 +181,7 @@
 			children = (
 				DB5EDE3F291FA47E00AE0386 /* Onboarding */,
 				DB95F3E1292133CA00D4F561 /* Home */,
-				DBECCC1B2922BF0500CCEA63 /* Choose Event */,
-				DBECCC1E2922BF3F00CCEA63 /* Final Register Check */,
+				DB9427A22928D8EB00FEA2FA /* Register to Event Flow */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -283,6 +288,74 @@
 				DB8B2C852924FA2B00F94D14 /* StaticVariables.swift */,
 			);
 			path = "Static Variables";
+			sourceTree = "<group>";
+		};
+		DB9427992928C6B900FEA2FA /* Terms and Condition Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DB94279B2928C6D700FEA2FA /* View Model */,
+				DB94279A2928C6D300FEA2FA /* View */,
+			);
+			path = "Terms and Condition Alert";
+			sourceTree = "<group>";
+		};
+		DB94279A2928C6D300FEA2FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB94279C2928C74B00FEA2FA /* TCRegisterAlertVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB94279B2928C6D700FEA2FA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DB94279E2928CA0300FEA2FA /* Final Register Check View Controller Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DB94279F2928CA3100FEA2FA /* FinalCheckVCDelegates.swift */,
+				DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */,
+			);
+			path = "Final Register Check View Controller Delegates";
+			sourceTree = "<group>";
+		};
+		DB9427A12928D8D300FEA2FA /* Register Event Ouput */ = {
+			isa = PBXGroup;
+			children = (
+				DB9427A42928D90A00FEA2FA /* View Model */,
+				DB9427A32928D90500FEA2FA /* View */,
+			);
+			path = "Register Event Ouput";
+			sourceTree = "<group>";
+		};
+		DB9427A22928D8EB00FEA2FA /* Register to Event Flow */ = {
+			isa = PBXGroup;
+			children = (
+				DBECCC1B2922BF0500CCEA63 /* Choose Event */,
+				DBECCC1E2922BF3F00CCEA63 /* Final Register Check */,
+				DB9427992928C6B900FEA2FA /* Terms and Condition Alert */,
+				DB9427A12928D8D300FEA2FA /* Register Event Ouput */,
+			);
+			path = "Register to Event Flow";
+			sourceTree = "<group>";
+		};
+		DB9427A32928D90500FEA2FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB9427A52928D92D00FEA2FA /* OutputRegisterEventVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB9427A42928D90A00FEA2FA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		DB95F3E1292133CA00D4F561 /* Home */ = {
@@ -452,7 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				DB70DF4B29247A090018E2FC /* FinalCheckVC.swift */,
-				DB8B2C802924EC9600F94D14 /* FinalCheckVC + TableViewDelegate.swift */,
+				DB94279E2928CA0300FEA2FA /* Final Register Check View Controller Delegates */,
 				DB70DF4D29247C530018E2FC /* Table View Cells */,
 			);
 			path = View;
@@ -566,6 +639,8 @@
 				DBECCC222922BF8100CCEA63 /* ChooseEventVC.swift in Sources */,
 				DB393C77291F9985003ADAB9 /* OnboardingVC.swift in Sources */,
 				DB2D2AB4292215270097B8D9 /* HomeButtonTableViewCell.swift in Sources */,
+				DB9427A02928CA3100FEA2FA /* FinalCheckVCDelegates.swift in Sources */,
+				DB94279D2928C74B00FEA2FA /* TCRegisterAlertVC.swift in Sources */,
 				DBECCC1A2922BE3C00CCEA63 /* ReusableEventView.swift in Sources */,
 				DB95F3E5292133F200D4F561 /* HomeVC.swift in Sources */,
 				DBECCC272922C31000CCEA63 /* EventTableViewCell.swift in Sources */,
@@ -578,6 +653,7 @@
 				DB5EDE56291FA55900AE0386 /* GLabel.swift in Sources */,
 				DB95F3F429214B2000D4F561 /* TicketView.swift in Sources */,
 				DB95F3F829214D1600D4F561 /* ReusableHomePageButton.swift in Sources */,
+				DB9427A62928D92D00FEA2FA /* OutputRegisterEventVC.swift in Sources */,
 				DB70DF5129247E710018E2FC /* ChosenEventTableViewCell.swift in Sources */,
 				DB0917C0292219EF00B405B1 /* HomeVC + TableViewDelegate.swift in Sources */,
 				DB95F3EC29213CCE00D4F561 /* VerseOfTheDayView.swift in Sources */,

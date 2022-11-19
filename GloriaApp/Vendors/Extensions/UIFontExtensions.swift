@@ -98,4 +98,43 @@ extension UIFont {
         
         return customFont
     }
+    
+    func addBullet(string: String, bullet: String = "\u{2022}", indentation: CGFloat = 15) -> NSAttributedString {
+        
+        let textAttributes = [
+            NSAttributedString.Key.font: UIFont.bodyText(),
+            NSAttributedString.Key.foregroundColor: UIColor.textColor
+        ]
+        let bulletAttributes = [
+            NSAttributedString.Key.font: UIFont.bodyText(),
+            NSAttributedString.Key.foregroundColor: UIColor.textColor
+        ]
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        let nonOptions = [NSTextTab.OptionKey: Any]()
+        paragraphStyle.tabStops = [
+            NSTextTab(textAlignment: .left, location: indentation, options: nonOptions)]
+        paragraphStyle.defaultTabInterval = indentation
+        paragraphStyle.headIndent = indentation
+        
+        let bulletList = NSMutableAttributedString()
+        let formattedString = "\(bullet)\t\(string)"
+        let attributedString = NSMutableAttributedString(string: formattedString)
+        
+        attributedString.addAttributes(
+            [NSAttributedString.Key.paragraphStyle : paragraphStyle],
+            range: NSMakeRange(0, attributedString.length))
+        
+        attributedString.addAttributes(
+            textAttributes as [NSAttributedString.Key : Any],
+            range: NSMakeRange(0, attributedString.length))
+        
+        let string = NSString(string: formattedString)
+        let rangeForBullet = string.range(of: bullet)
+        
+        attributedString.addAttributes(bulletAttributes as [NSAttributedString.Key : Any], range: rangeForBullet)
+        bulletList.append(attributedString)
+        
+        return bulletList
+    }
 }

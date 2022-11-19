@@ -18,9 +18,11 @@ class ButtonTableViewCell: UITableViewCell {
         return button
     }()
     
+    var delegate: FinalCheckVCDelegate?
+    
     // MARK: - Selectors
     @objc func handleButton() {
-        print("DEBUG: Hello, world!")
+        delegate?.showAlert()
     }
     
     // MARK: - Helpers
