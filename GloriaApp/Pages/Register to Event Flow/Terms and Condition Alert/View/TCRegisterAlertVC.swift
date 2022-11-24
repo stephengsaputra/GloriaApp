@@ -11,9 +11,10 @@ import SnapKit
 class TCRegisterAlertVC: UIViewController {
     
     // MARK: - Properties
-    internal lazy var visualEffectView: UIVisualEffectView = {
-        let view = UIVisualEffectView(effect: .none)
-        view.effect = UIBlurEffect(style: .systemUltraThinMaterial)
+    internal lazy var visualEffectView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        view.layer.opacity = 0.75
         return view
     }()
     
@@ -112,6 +113,10 @@ class TCRegisterAlertVC: UIViewController {
         }
     }
     
+    @objc func onViewSelected(_ sender: UITapGestureRecognizer) {
+        self.dismiss(animated: true)
+    }
+    
     // MARK: - Helpers
     func configureUI() {
         
@@ -127,5 +132,8 @@ class TCRegisterAlertVC: UIViewController {
             make.leading.trailing.equalToSuperview().inset(20)
             make.center.equalToSuperview()
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onViewSelected(_:)))
+        visualEffectView.addGestureRecognizer(tapGesture)
     }
 }
