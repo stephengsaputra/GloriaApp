@@ -14,7 +14,7 @@ class TCRegisterAlertVC: UIViewController {
     internal lazy var visualEffectView: UIView = {
         let view = UIView()
         view.backgroundColor = .black
-        view.layer.opacity = 0.75
+        view.layer.opacity = 0.85
         return view
     }()
     
